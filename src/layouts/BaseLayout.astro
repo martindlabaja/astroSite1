@@ -1,11 +1,13 @@
 ---
 // guide to flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 // lightbox future refactor: https://code.juliancataldo.com/component/astro-lightbox/#doc
+// cool gallery https://github.com/Charca/astro-photo-gallery
 
 import '../styles/global.css';
 import Menu from '../components/Menu.astro';
 import { ViewTransitions } from 'astro:transitions';
 const { pageTitle } = Astro.props;
+const siteName = 'Martin ';
 ---
 
 <html lang="en">
@@ -14,7 +16,7 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>{siteName + pageTitle}</title>
     <ViewTransitions />    
   </head>
   <body>   
