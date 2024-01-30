@@ -9,6 +9,10 @@ image:
     alt: 'The full Astro logo.'
 tags: ["engineering", "electronics", "arduino"]
 ---
+
+Image from public: (not supporting Image component)
+![A starry night sky.](/images/japan.jpg)
+
 Optical Frameworks - musical project, 6 albums releases on Lithuanian label "ColdTear Records" https://coldtearrecords.bandcamp.com/music
 
 nominace hudební cena Vinyla - [NOMINACE OBJEV 2011](http://vinyla.cz/cena/optical-frameworks/) (with released vinyl track)

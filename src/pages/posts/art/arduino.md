@@ -17,6 +17,8 @@ http://adam-meyer.com/arduino/high-power-control-with-arduino-and-tip120
 collector - Vcc
 emmiter - GND
 
+Image from public: (not supporting Image component)
+![A starry night sky.](/images/jupiter.jpg)
 
 telemetry program:
 To use the program you will need to have Java 8 installed. Download the program and source code here: [http://www.farrellf.com/TelemetryViewer/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm90eHZMWTZWeHNUeHBIRzR2T2txc3QxaW5nUXxBQ3Jtc0tuZ01SRjZEWXF1amh6OTk1TWJFVWZYbVQ2MGJMUS1HTlRQb0dLeEVPeExIT0JQWVFQQkZweGdUdHR1V1JxeV9WRnRvdDNkeThUaVcwSmdxcGJjcmhLMGVSMkg0WS1takxNc3FaSHB2d0dhemgxczVydw&q=http%3A%2F%2Fwww.farrellf.com%2FTelemetryViewer%2F&v=lFZ26gD7OIE) [https://github.com/farrellf/Telemetry...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVJ1ZFVyZDVPMGtza1BmRGVMRDVKeGpqWWNqUXxBQ3Jtc0tteE5IZUlYM3RYeV95OVBkMFJuWGdjLXlFRVZrdmdCdjNQNmEwMHZJWEQtLXJzMi1nTGxkZk9yNlJYT25JN2lxcmhqc29UWDF2Y01zclBieElhaE11dnFWOXZiN0NMRWIyVDd5SXFaSGZqQkw1Nk94OA&q=https%3A%2F%2Fgithub.com%2Ffarrellf%2FTelemetry-Viewer&v=lFZ26gD7OIE)
