@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import Footer from '../components/Footer.astro';
 import Menu from '../components/Menu.astro';
 import { ViewTransitions } from 'astro:transitions';
 const { pageTitle } = Astro.props;
@@ -17,7 +16,7 @@ const { pageTitle } = Astro.props;
   <body>       
     <Menu />
     <h1>{pageTitle}</h1>
-    <slot />    
-    <Footer />
+    <slot />   
+    
   </body>
 </html>
