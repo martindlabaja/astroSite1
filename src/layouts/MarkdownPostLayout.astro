@@ -1,13 +1,11 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
-const year = new Date().getFullYear();
 ---
 <BaseLayout pageTitle={'- '+frontmatter.title}>  
   <h1>{frontmatter.title}</h1>
   {frontmatter.pubDate.slice(0,10)}  Written by: {frontmatter.author}  
   <img src={frontmatter.image.url} width="50" alt={frontmatter.image.alt} />
-  <slot />
-  <div class='footer'>&copy; Martin D. {year}</div>
+  <slot />  
 </BaseLayout>
 

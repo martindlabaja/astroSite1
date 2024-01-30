@@ -5,6 +5,7 @@
   /* Add more src formats if available */
   /* Specify font-weight and font-style if necessary */
 }
+
 body {
   background-color: #06090f;
   font-family: 'iA Writer Mono', monospace; /* Use iA Writer Mono font */
@@ -32,6 +33,17 @@ body {
 .footer {
   display: flex;
   justify-content: center;
+}
+
+/* Content styles */
+
+.content a {
+  color: #3fb0ac;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.content a:hover {
+  color: #71c9c5;
 }
 
 /* Menu styles */
@@ -64,21 +76,3 @@ summary.accordion-header {
   transform: scale(1.05); /* Slightly increased scale on hover */
 }
 
-/* Content styles */
-.content {
-  flex: 1; /* Take remaining space */
-  
-  padding: 0em 2em 0em 2em;
-  border-radius: 5px;
-  /*background-color: #0f203d2f;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px -1px 0px 2px rgb(17, 21, 61);*/
-}
-.content a {
-  color: #3fb0ac;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.content a:hover {
-  color: #71c9c5;
-}
