@@ -27,7 +27,6 @@ with alloys use cutting fluid or oil
 
 ---
 
-Image from public: (not supporting Image component)
 ![A starry night sky.](/images/tr.PNG)
 
 The following equation is used to calculate spindle speed: rpm = sfm ÷ diameter × 3.82, where diameter is the cutting tool diameter or the part diameter on a lathe in inches, and 3.82 is a constant that comes from an algebraic simplifica-tion of the more complex formula: rpm = (sfm × 12) ÷ (diameter × π).

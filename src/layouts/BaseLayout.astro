@@ -1,10 +1,8 @@
 ---
-// guide to flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-// lightbox future refactor: https://code.juliancataldo.com/component/astro-lightbox/#doc
-// cool gallery https://github.com/Charca/astro-photo-gallery
-
+// ---------- BASE LAYOUT ---------- 
 import '../styles/global.css';
 import Menu from '../components/Menu.astro';
+import MobileMenu from '../components/MobileMenu.astro';
 import Footer from '../components/Footer.astro';
 import { ViewTransitions } from 'astro:transitions';
 const { pageTitle } = Astro.props;
@@ -12,32 +10,37 @@ const siteName = 'Martin ';
 ---
 
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{siteName + pageTitle}</title>
-    <ViewTransitions />   
-    <style>
-    .logo h1 { margin: 0 0 1em 0; }
-    .logo a { padding: inherit; }
-    </style> 
+    <ViewTransitions /> 
   </head>
-  <body>   
-    <div class="container">
 
+  <body>   
+    
+    <div class="container">
+      
       <div class="menu">
       <div class="logo" transition:animate="slide"><a href="/"><h1>µ</h1></a></div>
+      
       <Menu />      
       </div>
 
       <div class="content">
+        <div class="menuMobile"><Menu /></div>
         <slot />  
         <Footer />  
       </div>      
 
     </div>  
+
+    <script>      
+      import "../scripts/menuMobile.js";
+    </script>
       
   </body>
 </html>

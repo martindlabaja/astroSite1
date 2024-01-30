@@ -1,3 +1,9 @@
+# Martin notes:
+
+guide to flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+lightbox future refactor: https://code.juliancataldo.com/component/astro-lightbox/#doc
+cool gallery https://github.com/Charca/astro-photo-gallery
+
 # Astro Starter Kit: Minimal
 
 ```sh

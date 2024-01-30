@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
-title: 'Agar Plates'
+title: 'Agar Protocols'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
 author: 'Martin D.C.'
@@ -9,26 +9,26 @@ image:
     alt: 'The full Astro logo.'
 tags: ["engineering", "electronics", "arduino"]
 ---
-[YouTube](https://youtu.be/r_mLv6GsqAQ)
+## MAE Recipe #1
+- 10g Agar Agar
+- 7.5g Malt (note: if liquid candid, add more)
+- 500 ml boiling purified water
 
-10g Agar Agar
-7.5g Malt (note: if liquid candid, add more)
-500 ml boiling purified water
+**notes:** 
+- stir between sterilization to disallow sugar to solidify
+- sterilization: 20min @ 15psi 
 
-stir between sterilization to disallow sugar to solidify
-sterilization: 20min @ 15psi (Tesla Cooker I have fluctuates, so 30 min)
+If you have electric cooker like Tesla Cooker, pressure might fluctuate so I go for aprox. 30 min total)
 
-opt: wait 24-78hours to see if no contaminants are present
-
-note: (at an angle so that most of the agar will be at the same level as the surrounding water. Boil over rarely ever occurs if using this method.)
-
+Optionaly wait 24-78hours to see if no contaminants are present.
+source: [Mycology Exploration YouTube](https://youtu.be/r_mLv6GsqAQ)
 
 ---
 
-**Petri Dish Sterilization**
-30 min @ 15psi
+**Petri Dish Sterilization:** 30 min @ 15psi 
+**Agar Agar Sterilization:** 30 min @ 15psi
 
-**Agar Agar Sterilization**
+
 10g Agar Agar
 7.5g Malt 
 500 ml H2O
