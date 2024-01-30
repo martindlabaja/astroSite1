@@ -4,6 +4,7 @@ import Menu from '../components/Menu.astro';
 import Foot from '../components/Foot.astro';
 import { ViewTransitions } from 'astro:transitions';
 const { pageTitle } = Astro.props;
+const year = new Date().getFullYear();
 ---
 <html lang="en">
   <head>
@@ -18,6 +19,6 @@ const { pageTitle } = Astro.props;
     <Menu />
     <h1>{pageTitle}</h1>
     <slot />   
-    <Foot />
+    <div class='footer'>&copy; Martin D. {year}</div>
   </body>
 </html>
