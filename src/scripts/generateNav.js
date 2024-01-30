@@ -1,8 +1,8 @@
-// generate.js
+// to run in CMD : node --experimental-modules src/scripts/generateNav.js
+
 import fs from 'fs';
 import path from 'path';
 
-// node --experimental-modules src/scripts/generateNav.js to run, different for ES module
 //--------------------Directory readout-----------------------------------
 
 function findMarkdownFiles(directory, parentPath = '', filePaths = [], fileNames = [], fileContents = []) {
@@ -21,7 +21,6 @@ function findMarkdownFiles(directory, parentPath = '', filePaths = [], fileNames
     return { filePaths, fileNames, fileContents }; // Include fileNames in the returned object
 }
 const { filePaths, fileNames, fileContents } = findMarkdownFiles('src/pages/posts')
-
 
 
 //----------------------Menu JS Object---------------------------------
@@ -62,6 +61,7 @@ const accordionMenu = generateAccordionMenu(filePaths, fileNames);
 
 console.log(JSON.stringify(accordionMenu, null, 2));
 
+
 //----------------------Menu JS to HTML---------------------------------
 
 function generateAccordionHTML(menu, parentPath = '') {
@@ -93,7 +93,6 @@ function generateAccordionHTML(menu, parentPath = '') {
     return html;
 }
 const accordionHTML = generateAccordionHTML(accordionMenu);
-console.log(accordionHTML);
 
 fs.writeFileSync('src/components/Menu.astro', accordionHTML);
 

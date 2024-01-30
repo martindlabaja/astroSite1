@@ -1,65 +1,65 @@
-/* nav styles */
-.hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-  }
+@font-face {
+  font-family: 'IaWriter Mono';
+  src: url('..public/fonts/ia-writer-mono.woff2') format('woff2'),
+      url('..public/fonts/ia-writer-mono.woff') format('woff');
+  /* Add more src formats if available */
+  /* Specify font-weight and font-style if necessary */
+}
+body {
+  background-color: #06090f;
+  font-family: 'iA Writer Mono', monospace; /* Use iA Writer Mono font */
+  color: #c8cacc;
+  line-height: 1.6;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex: 1;   
+  gap: 50px;          
+}
+.menu {
+  flex: 0 0 auto;
+       
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
   
-  .hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #ff9776;
-  }
-  
-  .nav-links {
-    width: 100%;
-    top: 5rem;
-    left: 48px;
-    background-color: #ff9776;
-    display: none;
-    margin: 0;
-  }
-  
-  .nav-links a {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .nav-links a:hover, a:focus {
-    background-color: #ff9776;
-  }
-  
-  .expanded {
-    display: unset;
-  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
 
-  footer {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-  @media screen and (min-width: 636px) {
-    .nav-links {
-      margin-left: 5em;
-      display: block;
-      position: static;
-      width: auto;
-      background: none;
-    }
-  
-    .nav-links a {
-      display: inline-block;
-      padding: 15px 20px;
-    }
-  
-    .hamburger {
-      display: none;
-    }
-  }
+/* Menu styles */
+
+summary.accordion-header {
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-bottom: 0px; /* Separate menu items */
+  transition: transform 0.3s ease;
+}
+
+.menu a {
+  color: #3fb0ac; /* Adjusted menu item color */
+  text-decoration: none;
+  padding-left: 1em; /* Increased padding */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block; /* Make menu items block level */
+}
+
+.menu ul li a:hover {
+  background-color: #1c2733;
+  transform: scale(1.05); /* Slightly increased scale on hover */
+}

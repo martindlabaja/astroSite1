@@ -1,9 +1,10 @@
 ---
+// guide to flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 import '../styles/global.css';
 import Menu from '../components/Menu.astro';
 import { ViewTransitions } from 'astro:transitions';
 const { pageTitle } = Astro.props;
-const year = new Date().getFullYear();
 ---
 <html lang="en">
   <head>
@@ -12,12 +13,19 @@ const year = new Date().getFullYear();
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <ViewTransitions />
+    <ViewTransitions />    
   </head>
-  <body>       
-    <Menu />
-    <h1>{pageTitle}</h1>
-    <slot />   
-    <div class='footer'>&copy; Martin D. {year}</div>
+  <body>   
+    <div class="container">
+
+      <div class="menu">
+      <Menu />      
+      </div>
+
+      <div class="content">
+        <slot />   
+      </div>      
+
+    </div>     
   </body>
 </html>
