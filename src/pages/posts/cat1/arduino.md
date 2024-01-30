@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: 'Arduino'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
@@ -9,7 +9,9 @@ image:
     alt: 'The full Astro logo.'
 tags: ["engineering", "electronics", "arduino"]
 ---
-[High Power Control w Arduino](http://adam-meyer.com/arduino/high-power-control-with-arduino-and-tip120)
+**UE4 Arduino**
+
+[High Power Control www Arduino](http://adam-meyer.com/arduino/high-power-control-with-arduino-and-tip120)
 http://adam-meyer.com/arduino/high-power-control-with-arduino-and-tip120
 
 collector - Vcc
