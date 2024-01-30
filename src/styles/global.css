@@ -63,3 +63,20 @@ summary.accordion-header {
   background-color: #1c2733;
   transform: scale(1.05); /* Slightly increased scale on hover */
 }
+
+/* Content styles */
+.content {
+  flex: 1; /* Take remaining space */
+  background-color: #141b29;
+  padding: 0em 2em 0em 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content a {
+  color: #3fb0ac;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.content a:hover {
+  color: #71c9c5;
+}
