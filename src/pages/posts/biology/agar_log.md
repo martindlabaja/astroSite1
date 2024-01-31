@@ -1,14 +1,19 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
-title: 'Agar Protocols'
+title: Agar Protocols
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Martin D.C.'
+description: My experiences with cultivating mushroom colonies on agar plates, sterilizing & petri dishes.
+author: Martin D.C.
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
-tags: ["engineering", "electronics", "arduino"]
+  url: https://docs.astro.build/assets/full-logo-light.png
+  alt: The full Astro logo.
+tags:
+  - genetics
+  - biology
 ---
+![Mycelium](/images/myc1.jpg)
+
+The best recipe that has worked for me so far is: 
 ## MAE Recipe #1
 - 10g Agar Agar
 - 7.5g Malt (note: if liquid candid, add more)

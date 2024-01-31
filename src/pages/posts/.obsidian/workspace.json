@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "art/cnc.md",
+                "file": "engineering/thermocycler.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "art/cnc.md",
+                "file": "engineering/thermocycler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "art/cnc.md",
+                "file": "engineering/thermocycler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "art/cnc.md"
+                "file": "engineering/thermocycler.md"
               }
             }
           }
@@ -148,11 +148,26 @@
   },
   "active": "442d17d43bd7a0a9",
   "lastOpenFiles": [
-    "art/nova_stranka.md",
-    "art/cnc.md",
-    "kokot.md",
-    "engineering/thermocycler.md",
+    "images/thermo0.png",
+    "images/labRozvrzeni.drawio-1.png",
+    "images/thermo5.jpg",
+    "images/IMG_20220317_202053_551-scaled.jpg",
+    "images/cnc1.jpg",
+    "images/IMG_20220531_225124_350-2048x2048.jpg",
     "biology/agar_log.md",
+    "engineering/thermocycler.md",
+    "biology/portfolioRemarks.md",
+    "images/agar3.jpg",
+    "images/scot2.png",
+    "images/scot1.png",
+    "images/thermo3.jpg",
+    "images/pcr2.jpg",
+    "images/thermo4.jpg.crdownload",
+    "images/thermo3.png.crdownload",
+    "images/thermocycler2.jpg.crdownload",
+    "art/cnc.md",
+    "art/nova_stranka.md",
+    "kokot.md",
     "biology/agar log.md",
     "engineering/protocolAgarPlates.md",
     "biology/protocolAgarPlates.md",
@@ -161,24 +176,10 @@
     "images/ResizeToPublic.bat",
     "images/convertResize - Copy.bat",
     "images/convertResize.bat",
-    "images/tr2.jpg",
-    "images/tr.jpg",
-    "images/pcr.jpg",
-    "images/jupiter.png",
-    "images/japan.png",
-    "images/tr2.png",
-    "images/tr.png",
     "biology/trenink.md",
     "biology/primers.md",
-    "biology/portfolioRemarks.md",
     "images/_resizeImagesToPublicFolder.bat",
     "images/_resizeImagesToPublic.bat",
-    "images/_resizeImages.bat",
-    "images/tr2.PNG",
-    "images/tr.PNG",
-    "images/resizeImages.bat",
-    "images/jupiter.jpg",
-    "images",
     "Images.md",
     "2022-07-01.md",
     "art/arduino.md"

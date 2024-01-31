@@ -1,17 +1,19 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
-title: 'Remarks'
+title: Remarks
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Martin D.C.'
+description: CV maybe?
+author: Martin D.C.
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
-tags: ["engineering", "electronics", "arduino"]
+  url: https://docs.astro.build/assets/full-logo-light.png
+  alt: The full Astro logo.
+tags:
+  - engineering
+  - electronics
+  - arduino
 ---
 
-Image from public: (not supporting Image component)
-![A starry night sky.](/images/japan.jpg)
+![A starry night sky.](/images/agar2.jpg)
 
 Optical Frameworks - musical project, 6 albums releases on Lithuanian label "ColdTear Records" https://coldtearrecords.bandcamp.com/music
 

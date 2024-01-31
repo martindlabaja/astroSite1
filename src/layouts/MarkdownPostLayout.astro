@@ -8,6 +8,7 @@ const { frontmatter } = Astro.props;
 <BaseLayout pageTitle={'- '+frontmatter.title}>  
   <div class="postTitle"><h1>{frontmatter.title}</h1></div>
   <i>{frontmatter.pubDate.slice(0,10)} Written by {frontmatter.author}</i>  
+  <p><em>{frontmatter.description}</em></p>
   <slot />  
 </BaseLayout>
 

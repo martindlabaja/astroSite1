@@ -34,6 +34,7 @@ body {
 .footer {
   display: flex;
   justify-content: center;
+  margin-top: 0.5em;
 }
 
 
@@ -75,26 +76,22 @@ summary.accordion-header {
   transition: background-color 0.3s ease;
   display: block; /* Make menu items block level */
 }
-
-.menu ul li a:hover {
-  background-color: #1c2733;
-  transform: scale(1.05); /* Slightly increased scale on hover */
+.menu a:hover {
+  color: #39d3ce; /* Adjusted menu item color */
+  text-decoration: none;  
 }
 
 /* Mobile Menu */
 
 .menuMobile {
   display: flex;
-  justify-content: left;  
+  justify-content: left;   
   cursor: pointer;
+  margin-bottom: 1em;
 }
-
-.menuMobile .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
+.menuMobile a {
+  padding-left: 1em; 
+  text-decoration: none;
 }
 
 /* Logo */
@@ -108,7 +105,10 @@ summary.accordion-header {
 }
 
 /* Additional styles */
-
+img {
+  margin: 0px;
+  padding: 0px;
+}
 hr {
   border: none; /* Remove default border */
   height: 2px; /* Set height */
