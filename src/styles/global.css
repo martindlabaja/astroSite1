@@ -145,4 +145,7 @@ hr {
   .content {    
     max-width: 90%;  
   }
+  img {    
+    width: 400px;
+  }
 }
