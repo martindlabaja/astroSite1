@@ -11,12 +11,8 @@
             "id": "442d17d43bd7a0a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "biology/portfolioRemarks.mdx",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "biology/portfolioRemarks.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "biology/portfolioRemarks.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "biology/portfolioRemarks.mdx"
-              }
+              "state": {}
             }
           }
         ]
