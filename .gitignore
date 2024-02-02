@@ -19,3 +19,6 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# images in src>> pages (because we need image to be in src>>assets)
+src\pages\posts\images

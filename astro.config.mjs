@@ -16,8 +16,7 @@
       visit(tree, 'image', visitor)
     }
     return transform
-  }
-  
+  }  
   
   export default defineConfig({
     site: "https://peppy-marshmallow-841b1d.netlify.app",    
