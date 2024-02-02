@@ -21,4 +21,4 @@ pnpm-debug.log*
 .DS_Store
 
 # images in src>> pages (because we need image to be in src>>assets)
-src\pages\posts\images
+src/pages/posts/images/
