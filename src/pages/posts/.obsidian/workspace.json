@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "engineering/thermocycler.md",
+                "file": "biology/portfolioRemarks.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "engineering/thermocycler.md",
+                "file": "biology/portfolioRemarks.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "engineering/thermocycler.md",
+                "file": "biology/portfolioRemarks.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "engineering/thermocycler.md"
+                "file": "biology/portfolioRemarks.mdx"
               }
             }
           }
@@ -148,6 +148,11 @@
   },
   "active": "442d17d43bd7a0a9",
   "lastOpenFiles": [
+    "engineering/thermocycler.md",
+    "biology/portfolioRemarks.md",
+    "biology/portfolioRemarks.mdx",
+    "images/agar1.jpg",
+    "biology/primers.md",
     "images/thermo0.png",
     "images/labRozvrzeni.drawio-1.png",
     "images/thermo5.jpg",
@@ -155,13 +160,9 @@
     "images/cnc1.jpg",
     "images/IMG_20220531_225124_350-2048x2048.jpg",
     "biology/agar_log.md",
-    "engineering/thermocycler.md",
-    "biology/portfolioRemarks.md",
     "images/agar3.jpg",
     "images/scot2.png",
     "images/scot1.png",
-    "images/thermo3.jpg",
-    "images/pcr2.jpg",
     "images/thermo4.jpg.crdownload",
     "images/thermo3.png.crdownload",
     "images/thermocycler2.jpg.crdownload",
@@ -177,9 +178,7 @@
     "images/convertResize - Copy.bat",
     "images/convertResize.bat",
     "biology/trenink.md",
-    "biology/primers.md",
     "images/_resizeImagesToPublicFolder.bat",
-    "images/_resizeImagesToPublic.bat",
     "Images.md",
     "2022-07-01.md",
     "art/arduino.md"
