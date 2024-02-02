@@ -10,6 +10,8 @@ image:
 tags: ["biology", "science", "genetics"]
 ---
 
+![scot](../../../assets/scot2.png)
+
 obchod kde maji ITS pre-made:
 https://www.realgenelabs.com/universal-primer
 
