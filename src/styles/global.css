@@ -16,9 +16,9 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
-  flex: 1;   
-  gap: 50px;          
+  flex: 1;
+  justify-content: center;   
+  gap: 50px;           
 }
 .menu {
   flex: 0 0 auto;
@@ -27,9 +27,7 @@ body {
 .content {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  max-width: 62%;
-  
+  flex-direction: column;  
 }
 .footer {
   display: flex;
@@ -95,7 +93,6 @@ summary.accordion-header {
 }
 
 /* Logo */
-
 .logo h1 { 
   margin: 0 0 1em 0; 
 }
@@ -108,6 +105,7 @@ summary.accordion-header {
 img {
   margin: 0px;
   padding: 0px;
+  justif: center;
 }
 hr {
   border: none; /* Remove default border */
@@ -118,6 +116,7 @@ hr {
 
 /* Responsive, Toggle Menu / MenuMobile */
 
+/* screen */
 @media screen and (min-width: 636px) {
  
   .menu {
@@ -128,7 +127,11 @@ hr {
     display: none;
     
   }
+  .content {    
+    max-width: 500px;  
+  }
 }
+/* mobile */
 @media screen and (max-width: 636px) {
  
   .menu {
@@ -138,5 +141,8 @@ hr {
   .menuMobile {
     display: flex;
     
+  }
+  .content {    
+    max-width: 90%;  
   }
 }
