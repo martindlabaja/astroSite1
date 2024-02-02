@@ -13,7 +13,7 @@ tags:
   - arduino  
 ---
 
-![Image Agar](/images/agar2.jpg)
+![Image Agar](agar2.jpg)
 
 
 Optical Frameworks - musical project, 6 albums releases on Lithuanian label "ColdTear Records" https://coldtearrecords.bandcamp.com/music

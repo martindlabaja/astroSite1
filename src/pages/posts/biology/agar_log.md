@@ -11,7 +11,7 @@ tags:
   - genetics
   - biology
 ---
-![Mycelium](/images/myc1.jpg)
+![Mycelium](myc1.jpg)
 
 The best recipe that has worked for me so far is: 
 ## MAE Recipe #1

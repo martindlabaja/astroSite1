@@ -21,7 +21,7 @@ One of the most common process in genetics is a PCR, which is shorthand for [pol
 
 It is a set of chemical reactions that is giving us possibility to selectively **duplicate** a specific **part of DNA** that we extract from a tissue (cell) sample.
 pozadovane
-![PCR Reaction](/images/pcr1.png)
+![PCR Reaction](pcr1.png)
 
 For it to work, it needs a device that controls temperature **[C°]** in time. **[t]**
 
@@ -35,7 +35,7 @@ What we want from machine is to heat the sample as follows:
 
 Commercially available units are usually pretty expensive and look like this:
 
-![Thermocycler Unit](/images/thermo3.jpg)
+![Thermocycler Unit](thermo3.jpg)
 # Planning considerations
 Usual three stages:
 
@@ -45,8 +45,8 @@ Usual three stages:
 
 These were probably the two **most useful diagrams** I have found while browsing:
 
-![PCR Machine or Thermocycler](/images/thermo2.jpg)
-![PCR Machine or Thermocycler](/images/thermo1.png)
+![PCR Machine or Thermocycler](thermo2.jpg)
+![PCR Machine or Thermocycler](thermo1.png)
 [source1](https://www.genengnews.com/insights/development-and-evolution-of-pcr/) [source2](https://www.semanticscholar.org/paper/Temperature-Control-for-PCR-Thermocyclers-Based-on-Qiu-Yuan/8d26bb6e109e0f6a9a8ce5929e7fd1c4f334d723/figure/1)
 
 We can see that a primary method for heating and cooling is a **Peltier** element (**TE** or **TEC** in diagrams). 
@@ -54,7 +54,7 @@ We can see that a primary method for heating and cooling is a **Peltier** elemen
 The most complex part seems to be a "sample block", which needs to be made out of material with great heating conductivity and also needs to have as minimal mass as possible, because more material = heating and cooling takes longer so our **ΔC°/s** would also increase. 
 # Construction
 
-First I constructed a diagram of whole device:![PCR Machine Diagram](/images/thermo0.png)
+First I constructed a diagram of whole device:![PCR Machine Diagram](thermo0.png)
 Device has **two identical sections** that consist of the controller itself (Arduino in this case) that is connected to **H-Bridge** driver that **forwards  power** to the TEC Peltier elements.  H-Bridge can **reverse polarity** direction so Peltier can heat and cool the sample block when needed.
 
 Why two identical sections you ask? Well because if we heated the mini vials inserted into the device only from the bottom, there would be lots of condensation due to the temperature gradient inside the vials and from what I have read could interfere with undergoing PCR reaction. Most **commercial designs are using heated top lid** for this reason, usually heated with resistance wire. (as lid does not have so much mass to be heated up) 

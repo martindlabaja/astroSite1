@@ -1,13 +1,27 @@
-import { defineConfig } from 'astro/config';
-
-// https://astro.build/config
-export default defineConfig({    
-    site: "https://peppy-marshmallow-841b1d.netlify.app"
-  });
-
-
-
-
-
+  import { defineConfig } from 'astro/config';  
+  //npm install unist-util-visit
+  import { visit } from 'unist-util-visit'
+  // https://astro.build/config
   
-
+  function fixRelativeLinksFromObsidianToAstro(options) {
+    function visitor(node) {
+      if (node.url.startsWith('http') || node.url.startsWith('/images/')) {
+        return
+      }
+      if (!node.url.startsWith('/')) {
+        node.url = '../../../assets/' + node.url
+      }
+    }
+    function transform(tree) {
+      visit(tree, 'image', visitor)
+    }
+    return transform
+  }
+  
+  
+  export default defineConfig({
+    site: "https://peppy-marshmallow-841b1d.netlify.app",    
+    markdown: {
+      remarkPlugins: [[fixRelativeLinksFromObsidianToAstro, {}]],
+    },
+  });
