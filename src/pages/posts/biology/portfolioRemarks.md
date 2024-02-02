@@ -13,10 +13,7 @@ tags:
   - arduino
 ---
 
-import { Image } from 'astro:assets';
-import agar2 from '../assets/agar2.jpg';
-
-<Image src={agar2} alt="A rocketship in space."/>
+![Image Agar](/images/agar2.jpg)
 
 
 Optical Frameworks - musical project, 6 albums releases on Lithuanian label "ColdTear Records" https://coldtearrecords.bandcamp.com/music
