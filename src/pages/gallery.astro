@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const images = await Astro.glob("/src/assets/*").then(files => {
+  return files.map(file => file.default);
+});
+const pageTitle = 'Gallery';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+
+
+  <div class="gallery">  
+    {
+        images.map(({ src /* width and height is also available */ }) => (
+          
+            <a href={src}><img
+              class="object-contain h-full rounded-lg"
+              src={src}
+              alt=""
+              loading="lazy"
+            /></a>
+          
+        ))
+      }
+  </div>
+
+
+</BaseLayout>

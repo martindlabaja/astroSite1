@@ -129,7 +129,8 @@ hr {
     
   }
   .content {    
-    max-width: 62%;  
+    width: 62%;
+    max-width: 800px;  
   }
 }
 /* mobile */
@@ -144,6 +145,6 @@ hr {
     
   }
   .content {    
-    max-width: 90%;  
+    max-width: 100%;  
   } 
 }

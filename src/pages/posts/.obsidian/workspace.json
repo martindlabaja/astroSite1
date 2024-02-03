@@ -11,8 +11,12 @@
             "id": "442d17d43bd7a0a9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "art/landscape.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "art/landscape.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "art/landscape.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "art/landscape.md"
+              }
             }
           }
         ]
@@ -140,39 +148,42 @@
   },
   "active": "442d17d43bd7a0a9",
   "lastOpenFiles": [
-    "engineering/thermocycler.md",
+    "images/micro07.jpg",
+    "images/tercovkaBublinataRez03.jpg",
+    "images/_ResizeToAssets.bat",
+    "art/microscopy.md",
+    "images/micro06.jpg",
+    "images/micro05.jpg",
+    "images/micro04.jpg",
+    "images/sulfurCrystal02.jpg",
+    "images/micro03.jpg",
+    "images/micro02.jpg",
+    "images/micro01.jpg",
+    "images/~cot21.tmp",
+    "images/scot21.JPG",
+    "images/~cot20.tmp",
+    "images/scot20.JPG",
+    "images/~cot19.tmp",
+    "images/~cot18.tmp",
+    "images/~cot17.tmp",
+    "images/~cot16.tmp",
+    "images/~cot15.tmp",
+    "images/~cot14.tmp",
+    "images/~urk03.tmp",
+    "art/arduino.md",
+    "art/landscape.md",
+    "biology/trenink.md",
     "biology/portfolioRemarks.md",
-    "biology/portfolioRemarks.mdx",
-    "images/agar1.jpg",
     "biology/primers.md",
-    "images/thermo0.png",
-    "images/labRozvrzeni.drawio-1.png",
-    "images/thermo5.jpg",
-    "images/IMG_20220317_202053_551-scaled.jpg",
-    "images/cnc1.jpg",
-    "images/IMG_20220531_225124_350-2048x2048.jpg",
+    "engineering/thermocycler.md",
     "biology/agar_log.md",
-    "images/agar3.jpg",
-    "images/scot2.png",
-    "images/scot1.png",
-    "images/thermo4.jpg.crdownload",
-    "images/thermo3.png.crdownload",
-    "images/thermocycler2.jpg.crdownload",
     "art/cnc.md",
     "art/nova_stranka.md",
     "kokot.md",
     "biology/agar log.md",
     "engineering/protocolAgarPlates.md",
     "biology/protocolAgarPlates.md",
-    "images/_convertResize.bat",
-    "images/_ResizeToPublic.bat",
-    "images/ResizeToPublic.bat",
-    "images/convertResize - Copy.bat",
-    "images/convertResize.bat",
-    "biology/trenink.md",
-    "images/_resizeImagesToPublicFolder.bat",
     "Images.md",
-    "2022-07-01.md",
-    "art/arduino.md"
+    "2022-07-01.md"
   ]
 }
