@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 //npm install unist-util-visit
 import { visit } from 'unist-util-visit';
-import mdx from "@astrojs/mdx";
 
 function fixRelativeLinksFromObsidianToAstro(options) {
   function visitor(node) {
@@ -23,6 +22,6 @@ export default defineConfig({
   site: "https://peppy-marshmallow-841b1d.netlify.app",
   markdown: {
     remarkPlugins: [[fixRelativeLinksFromObsidianToAstro, {}]]
-  },
-  integrations: [mdx()]
+  }
+ 
 });
