@@ -15,7 +15,6 @@ tags:
 ![Scotland2](scot05.jpg)
 ![Scotland2](scot06.jpg)
 ![Scotland2](scot01.jpg)
-![Scotland2](scot21.jpg)
 ![Scotland2](scot08.jpg)
 ![Scotland2](scot09.jpg)
 ![Scotland2](scot10.jpg)
