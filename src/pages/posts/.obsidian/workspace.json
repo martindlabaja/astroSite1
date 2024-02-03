@@ -11,12 +11,8 @@
             "id": "442d17d43bd7a0a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "art/landscape.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "art/landscape.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "art/landscape.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "art/landscape.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,6 +140,7 @@
   },
   "active": "442d17d43bd7a0a9",
   "lastOpenFiles": [
+    "art/landscape.md",
     "images/micro07.jpg",
     "images/tercovkaBublinataRez03.jpg",
     "images/_ResizeToAssets.bat",
@@ -162,7 +155,6 @@
     "images/~cot21.tmp",
     "images/scot21.JPG",
     "images/~cot20.tmp",
-    "images/scot20.JPG",
     "images/~cot19.tmp",
     "images/~cot18.tmp",
     "images/~cot17.tmp",
@@ -171,7 +163,6 @@
     "images/~cot14.tmp",
     "images/~urk03.tmp",
     "art/arduino.md",
-    "art/landscape.md",
     "biology/trenink.md",
     "biology/portfolioRemarks.md",
     "biology/primers.md",
