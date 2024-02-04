@@ -31,11 +31,19 @@ body {
 }
 .footer {
   display: flex;
-  justify-content: center;
-  margin-top: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5em;   
 }
-
-
+.footerText {
+  display: flex;    
+  flex-grow: 1;
+}
+.social {  
+  display: flex;  
+  gap: 10px;
+  
+}
 /* Content styles */
 
 .content a {
