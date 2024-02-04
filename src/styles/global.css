@@ -91,7 +91,7 @@ summary.accordion-header {
 
 .menuMobile {
   display: flex;
-  justify-content: left;   
+  justify-content:space-between;   
   cursor: pointer;
   margin-bottom: 1em;
 }
