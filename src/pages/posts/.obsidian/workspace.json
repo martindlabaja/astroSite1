@@ -11,8 +11,12 @@
             "id": "442d17d43bd7a0a9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "engineering/thermocycler.mdx",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "engineering/thermocycler.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "engineering/thermocycler.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "engineering/thermocycler.mdx"
+              }
             }
           }
         ]
@@ -140,17 +148,33 @@
   },
   "active": "442d17d43bd7a0a9",
   "lastOpenFiles": [
-    "images/turk03.jpg",
-    "images/turk02.jpg",
-    "images/turk01.jpg",
-    "images/scot18.jpg",
-    "images/scot19.jpg",
-    "images/scot17.jpg",
-    "images/scot16.jpg",
-    "images/scot14.jpg",
-    "images/scot15.jpg",
-    "images/scot20.jpg",
-    "images/scot21.jpg",
+    "images/thermoFinal3.jpg",
+    "images/thermoGraf.jpg",
+    "images/thermoFinal1.jpg",
+    "images/thermoFInal2.jpg",
+    "images/IMG_20221113_221446_724-1727x2048.jpg",
+    "engineering/fume-hood.md",
+    "engineering/thermocycler.mdx",
+    "images/thermoFinal.jpg",
+    "images/thermo.jpg",
+    "images/IMG_20221120_200234_843-scaled.jpg",
+    "images/bioVis02.png",
+    "images/1BXN_sites_staticViz.png",
+    "images/bioVis01.png",
+    "biology/molecular-vis.md",
+    "biology/trenink.md",
+    "engineering/laminar-flow-hood.md",
+    "engineering/thermocycler.md",
+    "biology/about-me.md",
+    "biology/agar-log.md",
+    "engineering/laminarFlowHood.md",
+    "engineering/fume hood.md",
+    "engineering/fume_hood.md",
+    "engineering/fume_Hood.md",
+    "engineering/fume Hood.md",
+    "engineering/fumeHood.md",
+    "biology/agar_log.md",
+    "biology/portfolioRemarks.md",
     "art/landscape.md",
     "images/_ResizeToAssets.bat",
     "art/microscopy.md",
@@ -162,20 +186,13 @@
     "images/~cot16.tmp",
     "images/~cot15.tmp",
     "images/~cot14.tmp",
-    "images/~urk03.tmp",
     "art/arduino.md",
-    "biology/trenink.md",
-    "biology/portfolioRemarks.md",
     "biology/primers.md",
-    "engineering/thermocycler.md",
-    "biology/agar_log.md",
     "art/cnc.md",
     "art/nova_stranka.md",
     "kokot.md",
     "biology/agar log.md",
     "engineering/protocolAgarPlates.md",
-    "biology/protocolAgarPlates.md",
-    "Images.md",
-    "2022-07-01.md"
+    "biology/protocolAgarPlates.md"
   ]
 }

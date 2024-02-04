@@ -125,6 +125,12 @@ hr {
 
 /* Responsive, Toggle Menu / MenuMobile */
 
+/* Image Container that I use in .mdx files for "gallery" */
+
+.imageContainer {
+  display: inline;
+}
+
 /* screen */
 @media screen and (min-width: 636px) {
  

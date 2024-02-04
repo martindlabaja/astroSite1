@@ -12,7 +12,7 @@ function findMarkdownFiles(directory, parentPath = '', filePaths = [], fileNames
         
         if (file.isDirectory()) {
             findMarkdownFiles(filePath, relativePath, filePaths, fileNames, fileContents);
-        } else if (file.isFile() && path.extname(file.name) === '.md') {
+        } else if (file.isFile() && path.extname(file.name) === '.md' || path.extname(file.name) === '.mdx') {
             filePaths.push(relativePath.replace(/\\/g, '/'));
             fileNames.push(file.name);
             fileContents.push(fs.readFileSync(filePath, 'utf8'));
@@ -32,7 +32,7 @@ function generateAccordionMenu(filePaths, fileNames) {
     // Loop through each filePath
     for (let i = 0; i < filePaths.length; i++) {
         const filePath = filePaths[i];
-        const fileName = fileNames[i].replace('.md', '');       
+        const fileName = fileNames[i].replace(/\.(md|mdx)$/, '');       
         const segments = filePath.split('/');
 
         // Start from the root of the accordionMenu
