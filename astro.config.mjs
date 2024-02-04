@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config';
 //npm install unist-util-visit
 import { visit } from 'unist-util-visit';
 import mdx from "@astrojs/mdx";
+import embeds from 'astro-embed/integration';
+
 function fixRelativeLinksFromObsidianToAstro(options) {
   function visitor(node) {
     if (node.url.startsWith('http') || node.url.startsWith('/images/')) {
@@ -24,5 +26,5 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [[fixRelativeLinksFromObsidianToAstro, {}]]
   },
-  integrations: [mdx()]
+  integrations: [embeds(), mdx()]
 });

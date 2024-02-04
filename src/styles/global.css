@@ -52,7 +52,7 @@ body {
   transition: color 0.3s ease;
 }
 .content a:hover {
-  color: #71c9c5;
+  color: #abd4d3;
 }
 .content h1,h2,h3,h4,strong {
   color: #3fb0ac;
@@ -127,8 +127,10 @@ hr {
 
 /* Image Container that I use in .mdx files for "gallery" */
 
-.imageContainer {
-  display: inline;
+.sidewayContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 /* screen */

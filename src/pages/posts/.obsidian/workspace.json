@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f2657f6c52fd3fce",
+        "id": "2c9019e7db942930",
         "type": "tabs",
         "children": [
           {
-            "id": "442d17d43bd7a0a9",
+            "id": "8bb988e8b5235fd4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "engineering/thermocycler.mdx",
+                "file": "audiovisual/music.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "engineering/thermocycler.mdx",
+                "file": "audiovisual/music.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "engineering/thermocycler.mdx",
+                "file": "audiovisual/music.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "engineering/thermocycler.mdx"
+                "file": "audiovisual/music.mdx"
               }
             }
           }
@@ -146,27 +146,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "442d17d43bd7a0a9",
+  "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
-    "images/thermoFinal2.jpg",
-    "images/thermoFinal3.jpg",
-    "images/thermoGraf.jpg",
-    "images/thermoFinal1.jpg",
-    "images/thermoFInal2.jpg",
-    "images/IMG_20221113_221446_724-1727x2048.jpg",
-    "engineering/fume-hood.md",
-    "engineering/thermocycler.mdx",
-    "images/thermoFinal.jpg",
-    "images/thermo.jpg",
-    "images/IMG_20221120_200234_843-scaled.jpg",
-    "images/bioVis02.png",
-    "images/1BXN_sites_staticViz.png",
-    "biology/molecular-vis.md",
-    "biology/trenink.md",
-    "engineering/laminar-flow-hood.md",
-    "engineering/thermocycler.md",
+    "about-me/goals-&-projets.mdx",
+    "audiovisual/music.md",
+    "audiovisual/music.mdx",
+    "images/~5.tmp",
+    "images/m5.jpg",
+    "Pasted image 20240204230340.png",
+    "images/m4.jpg",
+    "images/m3.jpg",
+    "images/fume9.jpg",
+    "images/m1.jpg",
+    "images/~4.tmp",
+    "images/m4.JPG",
+    "images/~3.tmp",
+    "images/m3.JPG",
+    "images/~2.tmp",
+    "images/m2.jpg",
+    "images/~usic1.tmp",
+    "images/music1.JPG",
+    "about-me/skills.mdx",
+    "about-me/goals-n-projets.mdx",
+    "about-me/about-me.mdx",
+    "audivisual/microscopy.md",
+    "audiovisual/microscopy.md",
+    "audiovisual/landscape.md",
+    "audivisual/music.md",
     "biology/about-me.md",
     "biology/agar-log.md",
+    "biology/trenink.md",
+    "engineering/laminar-flow-hood.md",
+    "engineering/fume-hood.md",
+    "audivisual/landscape.md",
+    "visual/microscopy.md",
+    "visual/landscape.md",
+    "biology/molecular-vis.md",
+    "engineering/thermocycler.md",
     "engineering/laminarFlowHood.md",
     "engineering/fume hood.md",
     "engineering/fume_hood.md",
@@ -175,24 +191,7 @@
     "engineering/fumeHood.md",
     "biology/agar_log.md",
     "biology/portfolioRemarks.md",
-    "art/landscape.md",
-    "images/_ResizeToAssets.bat",
-    "art/microscopy.md",
-    "images/~cot21.tmp",
-    "images/~cot20.tmp",
-    "images/~cot19.tmp",
-    "images/~cot18.tmp",
-    "images/~cot17.tmp",
-    "images/~cot16.tmp",
-    "images/~cot15.tmp",
-    "images/~cot14.tmp",
     "art/arduino.md",
-    "biology/primers.md",
-    "art/cnc.md",
-    "art/nova_stranka.md",
-    "kokot.md",
-    "biology/agar log.md",
-    "engineering/protocolAgarPlates.md",
-    "biology/protocolAgarPlates.md"
+    "biology/primers.md"
   ]
 }
