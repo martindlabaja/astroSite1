@@ -11,6 +11,8 @@ tags:
   - genetics
   - biology
 ---
+<br/>
+
 ![Mycelium](micro04.jpg)
 
 The best recipe that has worked for me so far is: 

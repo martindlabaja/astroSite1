@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about-me/personal-philosophy.md",
+                "file": "audiovisual/music.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about-me/personal-philosophy.md",
+                "file": "audiovisual/music.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about-me/personal-philosophy.md",
+                "file": "audiovisual/music.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about-me/personal-philosophy.md"
+                "file": "audiovisual/music.mdx"
               }
             }
           }
@@ -148,31 +148,34 @@
   },
   "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
-    "about-me/skills.mdx",
-    "about-me/personal-philosophy.md",
-    "about-me/goals-&-projets.mdx",
-    "audiovisual/music.mdx",
-    "engineering/thermocycler.mdx",
-    "engineering/fume-hood.mdx",
+    "about-me/personal-philosophy.mdx",
     "biology/agar-log.md",
+    "biology/agar-log.mdx",
+    "audiovisual/dataviz.mdx",
+    "audiovisual/3D-animation.mdx",
+    "audiovisual/3Danimation.mdx",
+    "audiovisual/3Danimation",
+    "audiovisual/video.md",
+    "audiovisual/video.mdx",
+    "audiovisual/music.mdx",
+    "audiovisual/fpv.mdx",
+    "engineering/fume-hood.mdx",
+    "about-me/personal-philosophy.md",
+    "audiovisual/fpv.md",
+    "about-me/goals-&-projets.mdx",
     "audiovisual/landscape.md",
+    "images/drone3.png",
+    "images/drone3.jpg",
+    "images/drone2.jpg",
+    "images/drone1.jpg",
     "audiovisual/microscopy.md",
     "audiovisual/music.md",
-    "images/~5.tmp",
     "images/m5.jpg",
     "Pasted image 20240204230340.png",
     "images/m4.jpg",
     "images/m3.jpg",
     "images/fume9.jpg",
     "images/m1.jpg",
-    "images/~4.tmp",
-    "images/m4.JPG",
-    "images/~3.tmp",
-    "images/m3.JPG",
-    "images/~2.tmp",
-    "images/m2.jpg",
-    "images/~usic1.tmp",
-    "images/music1.JPG",
     "audivisual/microscopy.md",
     "audivisual/music.md",
     "biology/about-me.md",
@@ -190,8 +193,6 @@
     "engineering/fume_Hood.md",
     "engineering/fume Hood.md",
     "engineering/fumeHood.md",
-    "biology/agar_log.md",
-    "biology/portfolioRemarks.md",
-    "art/arduino.md"
+    "biology/agar_log.md"
   ]
 }

@@ -26,7 +26,8 @@ import d2 from '../../../assets/thermo2.jpg';
 
 The **thermal cycler** (also known as a **thermocycler**, **PCR machine** or **DNA amplifier**) is a [laboratory](https://en.wikipedia.org/wiki/Laboratory "Laboratory") apparatus most commonly used to amplify segments of [DNA](https://en.wikipedia.org/wiki/DNA "DNA") via the [polymerase chain reaction](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (PCR).[[1]](https://en.wikipedia.org/wiki/Thermal_cycler#cite_note-1) Thermal cyclers may also be used in laboratories to facilitate other temperature-sensitive reactions, including [restriction enzyme](https://en.wikipedia.org/wiki/Restriction_enzyme "Restriction enzyme") digestion or rapid diagnostics.[[2]](https://en.wikipedia.org/wiki/Thermal_cycler#cite_note-2) The device has a _thermal block_ with holes where tubes holding the reaction mixtures can be inserted. The cycler then raises and lowers the temperature of the block in discrete, pre-programmed steps.
 
----
+<br/>
+
 # Final result
 <div class="sidewayContainer">
 <Image src={thermo1} alt='thermoFinal' style="width: 47.4%;"/>
@@ -35,6 +36,9 @@ The **thermal cycler** (also known as a **thermocycler**, **PCR machine** o
 <em>Four standart PCR vials in a heating chamber. Heating & cooling controlled by two TEC Peltier Elements with separate PID loop with custom software.</em>
 ![PCR Reaction](thermoFinal3.jpg)
 <em>Custom controlling software with logging and history.</em>
+
+---
+
 # Intro
 
 One of the most common process in genetics is a PCR, which is shorthand for [polymerase chain reaction](https://www.bosterbio.com/protocol-and-troubleshooting/pcr-principle).
@@ -56,6 +60,9 @@ What we want from machine is to heat the sample as follows:
 Commercially available units are usually pretty expensive and look like this:
 
 ![Thermocycler Unit](thermo3.jpg)
+
+---
+
 # Planning
 Usual three stages:
 
@@ -74,6 +81,9 @@ These were probably the two **most useful diagrams** I have found while browsing
 We can see that a primary method for heating and cooling is a **Peltier** element (**TE** or **TEC** in diagrams). 
 
 The most complex part seems to be a "sample block", which needs to be made out of material with great heating conductivity and also needs to have as minimal mass as possible, because more material = heating and cooling takes longer so our **ΔC°/s** would also increase. 
+
+---
+
 # Construction
 
 First I constructed a diagram of whole device:![PCR Machine Diagram](thermo0.png)
@@ -86,3 +96,4 @@ I will use TEC Peltier element for both sample block and a lid. Because I dont l
 Let' put it to test on  a breaboard version of a project. Before I make  a proper sample block, I used a small chamber with water just to see how Peltier works to make some measurements beforehand.
 
 
+---
