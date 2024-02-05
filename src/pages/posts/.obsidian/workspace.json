@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "engineering/fume-hood.mdx",
+                "file": "about-me/personal-philosophy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "engineering/fume-hood.mdx",
+                "file": "about-me/personal-philosophy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "engineering/fume-hood.mdx",
+                "file": "about-me/personal-philosophy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "engineering/fume-hood.mdx"
+                "file": "about-me/personal-philosophy.md"
               }
             }
           }
@@ -148,12 +148,15 @@
   },
   "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
-    "biology/agar-log.md",
+    "about-me/skills.mdx",
+    "about-me/personal-philosophy.md",
+    "about-me/goals-&-projets.mdx",
     "audiovisual/music.mdx",
+    "engineering/thermocycler.mdx",
+    "engineering/fume-hood.mdx",
+    "biology/agar-log.md",
     "audiovisual/landscape.md",
     "audiovisual/microscopy.md",
-    "about-me/goals-&-projets.mdx",
-    "about-me/skills.mdx",
     "audiovisual/music.md",
     "images/~5.tmp",
     "images/m5.jpg",
@@ -170,8 +173,6 @@
     "images/m2.jpg",
     "images/~usic1.tmp",
     "images/music1.JPG",
-    "about-me/goals-n-projets.mdx",
-    "about-me/about-me.mdx",
     "audivisual/microscopy.md",
     "audivisual/music.md",
     "biology/about-me.md",
@@ -191,7 +192,6 @@
     "engineering/fumeHood.md",
     "biology/agar_log.md",
     "biology/portfolioRemarks.md",
-    "art/arduino.md",
-    "biology/primers.md"
+    "art/arduino.md"
   ]
 }
