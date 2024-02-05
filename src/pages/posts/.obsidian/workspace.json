@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "audiovisual/music.mdx",
+                "file": "engineering/fume-hood.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "audiovisual/music.mdx",
+                "file": "engineering/fume-hood.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "audiovisual/music.mdx",
+                "file": "engineering/fume-hood.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "audiovisual/music.mdx"
+                "file": "engineering/fume-hood.mdx"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
-    "about-me/goals-&-projets.mdx",
-    "audiovisual/music.md",
+    "biology/agar-log.md",
     "audiovisual/music.mdx",
+    "audiovisual/landscape.md",
+    "audiovisual/microscopy.md",
+    "about-me/goals-&-projets.mdx",
+    "about-me/skills.mdx",
+    "audiovisual/music.md",
     "images/~5.tmp",
     "images/m5.jpg",
     "Pasted image 20240204230340.png",
@@ -166,15 +170,11 @@
     "images/m2.jpg",
     "images/~usic1.tmp",
     "images/music1.JPG",
-    "about-me/skills.mdx",
     "about-me/goals-n-projets.mdx",
     "about-me/about-me.mdx",
     "audivisual/microscopy.md",
-    "audiovisual/microscopy.md",
-    "audiovisual/landscape.md",
     "audivisual/music.md",
     "biology/about-me.md",
-    "biology/agar-log.md",
     "biology/trenink.md",
     "engineering/laminar-flow-hood.md",
     "engineering/fume-hood.md",
