@@ -166,8 +166,10 @@ ul.contains-task-list {
 /* Image Container that I use in .mdx files for "gallery" */
 .grid {
   display: grid;
-  grid-template-columns: 50% 50%;  
-  margin:0px;
+  grid-template-columns: 50% 50%;    
+  
+ 
+  margin: 0em 0em 0em 0em;
   padding:0px;  
 }
 

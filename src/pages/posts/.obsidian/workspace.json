@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "audiovisual/video.mdx",
+                "file": "engineering/fume-hood.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "audiovisual/video.mdx",
+                "file": "engineering/fume-hood.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "audiovisual/video.mdx",
+                "file": "engineering/fume-hood.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "audiovisual/video.mdx"
+                "file": "engineering/fume-hood.mdx"
               }
             }
           }
@@ -148,22 +148,22 @@
   },
   "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
+    "biology/molecular-vis.mdx",
     "biology/microscopy.mdx",
-    "audiovisual/microscopy.mdx",
-    "images/ps8208.tmp",
-    "images/ps285D.tmp",
-    "audiovisual/music.mdx",
-    "about-me/personal-philosophy.mdx",
     "biology/agar-log.md",
-    "biology/agar-log.mdx",
+    "audiovisual/video.mdx",
+    "audiovisual/music.mdx",
+    "audiovisual/landscape.md",
+    "audiovisual/fpv.mdx",
     "audiovisual/dataviz.mdx",
     "audiovisual/3D-animation.mdx",
-    "audiovisual/3Danimation.mdx",
-    "audiovisual/3Danimation",
+    "about-me/skills.mdx",
+    "about-me/personal-philosophy.mdx",
+    "about-me/goals-&-projets.mdx",
+    "audiovisual/microscopy.mdx",
     "audiovisual/video.md",
     "about-me/personal-philosophy.md",
     "audiovisual/fpv.md",
-    "audiovisual/landscape.md",
     "images/drone3.png",
     "images/drone3.jpg",
     "images/drone2.jpg",
