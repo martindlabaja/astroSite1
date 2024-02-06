@@ -26,8 +26,7 @@ body {
   gap: 50px;           
 }
 .menu {
-  flex: 0 0 auto;
-    
+  flex: 0 0 auto;  
 }
 .content {
   flex: 1;
@@ -169,15 +168,12 @@ ul.contains-task-list {
   grid-template-columns: 50% 50%; 
   margin: 0em 0em 0em 0em;
   padding:0px; 
-  /*scale: 0 1;
-  transform-origin: left;
-  animation: grid linear;
-  animation-timeline: scroll();*/
+ 
 }
 
-/*@keyframes grid {
-  to {scale: 1 1;}
-}*/
+/*--------------------------------------*/
+/*             Animation                */
+/*--------------------------------------*/
 
 img, lite-youtube {  
   animation: fade-in linear;
@@ -187,7 +183,7 @@ img, lite-youtube {
 }
 
 @keyframes fade-in {
-  from {scale: .8; opacity: 0;}
+  from {scale: .85; opacity: 0;}
   to {scale: 1; opacity: 1;}
 }
 
