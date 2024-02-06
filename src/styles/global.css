@@ -166,12 +166,31 @@ ul.contains-task-list {
 /* Image Container that I use in .mdx files for "gallery" */
 .grid {
   display: grid;
-  grid-template-columns: 50% 50%;    
-  
- 
+  grid-template-columns: 50% 50%; 
   margin: 0em 0em 0em 0em;
-  padding:0px;  
+  padding:0px; 
+  /*scale: 0 1;
+  transform-origin: left;
+  animation: grid linear;
+  animation-timeline: scroll();*/
 }
+
+/*@keyframes grid {
+  to {scale: 1 1;}
+}*/
+
+img, lite-youtube {  
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 500px;
+}
+
+@keyframes fade-in {
+  from {scale: .8; opacity: 0;}
+  to {scale: 1; opacity: 1;}
+}
+
 
 /*--------------------------------------*/
 /* Responsive, Toggle Menu / MenuMobile */

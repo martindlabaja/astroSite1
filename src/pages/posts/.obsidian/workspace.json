@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "engineering/fume-hood.mdx",
+                "file": "engineering/laminar-flow-hood.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "engineering/fume-hood.mdx",
+                "file": "engineering/laminar-flow-hood.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "engineering/fume-hood.mdx",
+                "file": "engineering/laminar-flow-hood.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "engineering/fume-hood.mdx"
+                "file": "engineering/laminar-flow-hood.md"
               }
             }
           }
@@ -148,6 +148,15 @@
   },
   "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
+    "engineering/mechanisms.mdx",
+    "engineering/laminar-flow-hood.md",
+    "engineering/fume-hood.mdx",
+    "images/p2.jpg",
+    "images/p1.jpg",
+    "images/~2.tmp",
+    "images/p2.JPG",
+    "images/~1.tmp",
+    "images/p1.JPG",
     "biology/molecular-vis.mdx",
     "biology/microscopy.mdx",
     "biology/agar-log.md",
@@ -156,11 +165,6 @@
     "audiovisual/landscape.md",
     "audiovisual/fpv.mdx",
     "audiovisual/dataviz.mdx",
-    "audiovisual/3D-animation.mdx",
-    "about-me/skills.mdx",
-    "about-me/personal-philosophy.mdx",
-    "about-me/goals-&-projets.mdx",
-    "audiovisual/microscopy.mdx",
     "audiovisual/video.md",
     "about-me/personal-philosophy.md",
     "audiovisual/fpv.md",
@@ -172,15 +176,10 @@
     "audiovisual/music.md",
     "images/m5.jpg",
     "Pasted image 20240204230340.png",
-    "images/m4.jpg",
-    "images/m3.jpg",
-    "images/fume9.jpg",
-    "images/m1.jpg",
     "audivisual/microscopy.md",
     "audivisual/music.md",
     "biology/about-me.md",
     "biology/trenink.md",
-    "engineering/laminar-flow-hood.md",
     "engineering/fume-hood.md",
     "audivisual/landscape.md",
     "visual/microscopy.md",
