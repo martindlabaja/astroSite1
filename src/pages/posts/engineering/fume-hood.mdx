@@ -11,6 +11,8 @@ tags:
   - genetics
   - biology
 ---
+
+
 A **fume hood** (sometimes called a **fume cupboard** or **fume closet**) is a type of local [ventilation](https://en.wikipedia.org/wiki/Ventilation_(architecture) "Ventilation (architecture)") device that is designed to limit exposure to hazardous or toxic fumes, [vapors](https://en.wikipedia.org/wiki/Vapor "Vapor") or [dusts](https://en.wikipedia.org/wiki/Dust "Dust"). The device is an enclosure with a movable [sash window](https://en.wikipedia.org/wiki/Sash_window "Sash window") on one side that traps and exhausts gases and particulates either out of the area (through a [duct](https://en.wikipedia.org/wiki/Duct_(industrial_exhaust) "Duct (industrial exhaust)")) or back into the room (through [air filtration](https://en.wikipedia.org/wiki/Air_filter "Air filter")), and is most frequently used in [laboratory](https://en.wikipedia.org/wiki/Laboratory "Laboratory") settings.
 
 
@@ -33,7 +35,7 @@ For fans I opted for marine purposed fan used in highly salinated environment an
 
 
 ![fume](fume8.jpg)
-*Pre-viz in Blender*
+***Photo:** Pre-viz in Blender*
 
 In the pre-viz image you can see two boards called an "**airfoil**" which make use of **Bernoulli's principle**: Within a horizontal flow of fluid, points of higher fluid speed will have less pressure than points of slower fluid speed.
 
@@ -44,26 +46,17 @@ For this project I did not run any experimental computer fluid simulations and d
 ---
 # Construction
 
-
 ![fume image](fume9.jpg)
 *Top view on three marine-purposed fans and simple electronics setup. (a PWM regulator with a 12V supply.*
 
 
-![fume image](fume5.jpg)
-*Cabinet itself is connected with dovetails, glued and sealed in silicon*
+import {Image} from 'astro:assets';
+import fume5 from '../../../assets/fume5.jpg';
+import fume6 from '../../../assets/fume6.jpg';
 
-![fume image](fume6.jpg)*3D printed knobs and covers for plexi-glass installment*
-
-import { Image } from 'astro:assets';
-import f1 from '../../../assets/fume8.jpg';
-
-<div class="sidewayContainer">
-<div class="s1"><Image src={f1} alt='fume' style='width=150%'/></div>
-<div class="s2">
-
-In th" which make use of **Bernoulli's principle**: Within a horizontal flow of fluid, points of higher fluid speed will have less pressure than points of slower fluid speed.
-
-</div>
+<div class='grid'>
+<div><Image src={fume5} alt='popis'/><em><strong>Photo:</strong> Cabinet itself is connected with dovetails, glued and sealed in silicon.</em></div>
+<div><Image src={fume6} alt='popis'/><em><strong>Photo:</strong> 3D printed knobs and covers for plexi-glass installment.</em></div>
 </div>
 
 ---

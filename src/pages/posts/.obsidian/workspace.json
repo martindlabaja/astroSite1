@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "audiovisual/music.mdx",
+                "file": "audiovisual/video.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "audiovisual/music.mdx",
+                "file": "audiovisual/video.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "audiovisual/music.mdx",
+                "file": "audiovisual/video.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "audiovisual/music.mdx"
+                "file": "audiovisual/video.mdx"
               }
             }
           }
@@ -148,6 +148,11 @@
   },
   "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
+    "biology/microscopy.mdx",
+    "audiovisual/microscopy.mdx",
+    "images/ps8208.tmp",
+    "images/ps285D.tmp",
+    "audiovisual/music.mdx",
     "about-me/personal-philosophy.mdx",
     "biology/agar-log.md",
     "biology/agar-log.mdx",
@@ -156,13 +161,8 @@
     "audiovisual/3Danimation.mdx",
     "audiovisual/3Danimation",
     "audiovisual/video.md",
-    "audiovisual/video.mdx",
-    "audiovisual/music.mdx",
-    "audiovisual/fpv.mdx",
-    "engineering/fume-hood.mdx",
     "about-me/personal-philosophy.md",
     "audiovisual/fpv.md",
-    "about-me/goals-&-projets.mdx",
     "audiovisual/landscape.md",
     "images/drone3.png",
     "images/drone3.jpg",
