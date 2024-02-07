@@ -11,7 +11,7 @@ function fixRelativeLinksFromObsidianToAstro(options) {
     }
     if (!node.url.startsWith('/')) {
       node.url = '../../../assets/' + node.url;
-    }   
+    }
   }
   function transform(tree) {
     visit(tree, 'image', visitor);
