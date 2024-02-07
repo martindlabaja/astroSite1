@@ -29,10 +29,12 @@ The **thermal cycler** (also known as a **thermocycler**, **PCR machine** o
 <br/>
 
 # Final result
+
 <div class="grid">
-<Image src={thermo1} alt='thermoFinal' />
-<Image src={thermo2} alt='thermoFinal' />
+<div class="imgWrap" data-lightbox="true"><Image src={thermo1} alt='thermoFinal' /></div>
+<div class="imgWrap" data-lightbox="true"><Image src={thermo2} alt='thermoFinal' /></div>
 </div>
+
 <em>Four standart PCR vials in a heating chamber. Heating & cooling controlled by two TEC Peltier Elements with separate PID loop with custom software.</em>
 ![PCR Reaction](thermoFinal3.jpg)
 <em>Custom controlling software with logging and history.</em>
@@ -44,8 +46,8 @@ The **thermal cycler** (also known as a **thermocycler**, **PCR machine** o
 One of the most common process in genetics is a PCR, which is shorthand for [polymerase chain reaction](https://www.bosterbio.com/protocol-and-troubleshooting/pcr-principle).
 
 It is a set of chemical reactions that is giving us possibility to selectively **duplicate** a specific **part of DNA** that we extract from a tissue (cell) sample.
-pozadovane
-![PCR Reaction](pcr1.png)
+
+<div class="imgWrap" data-lightbox="true">![PCR Reaction](pcr1.png)</div>
 
 For it to work, it needs a device that controls temperature **[C°]** in time. **[t]**
 
@@ -59,7 +61,7 @@ What we want from machine is to heat the sample as follows:
 
 Commercially available units are usually pretty expensive and look like this:
 
-![Thermocycler Unit](thermo3.jpg)
+<div class="imgWrap" data-lightbox="true">![Thermocycler Unit](thermo3.jpg)</div>
 
 ---
 
@@ -71,9 +73,10 @@ Usual three stages:
 3. make more robust design
 
 These were probably the two **most useful diagrams** I have found while browsing and are describing the basic structure of device:
-<div class="imageContainer">
-<Image src={d1} alt='thermoFinal' style="width: 40%;"/>
-<Image src={d2} alt='thermoFinal' style="width: 50%;"/>
+
+<div class="grid">
+<div class="imgWrap" data-lightbox="true"><Image src={d1} alt='thermoFinal'/></div>
+<div class="imgWrap" data-lightbox="true"><Image src={d2} alt='thermoFinal'/></div>
 </div>
 
 [source1](https://www.genengnews.com/insights/development-and-evolution-of-pcr/) [source2](https://www.semanticscholar.org/paper/Temperature-Control-for-PCR-Thermocyclers-Based-on-Qiu-Yuan/8d26bb6e109e0f6a9a8ce5929e7fd1c4f334d723/figure/1)
@@ -86,7 +89,10 @@ The most complex part seems to be a "sample block", which needs to be made out o
 
 # Construction
 
-First I constructed a diagram of whole device:![PCR Machine Diagram](thermo0.png)
+First I constructed a diagram of whole device:
+
+<div class="imgWrap" data-lightbox="true">![PCR Machine Diagram](thermo0.png)</div>
+
 Device has **two identical sections** that consist of the controller itself (Arduino in this case) that is connected to **H-Bridge** driver that **forwards  power** to the TEC Peltier elements.  H-Bridge can **reverse polarity** direction so Peltier can heat and cool the sample block when needed.
 
 Why two identical sections you ask? Well because if we heated the mini vials inserted into the device only from the bottom, there would be lots of condensation due to the temperature gradient inside the vials and from what I have read could interfere with undergoing PCR reaction. Most **commercial designs are using heated top lid** for this reason, usually heated with resistance wire. (as lid does not have so much mass to be heated up) 
