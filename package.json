@@ -18,5 +18,8 @@
     "rehype-wrap": "^1.1.0",
     "typescript": "^5.3.3",
     "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
   }
 }
