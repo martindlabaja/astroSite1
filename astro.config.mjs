@@ -4,6 +4,7 @@ import { visit } from 'unist-util-visit';
 import mdx from "@astrojs/mdx";
 import embeds from 'astro-embed/integration';
 
+
 function fixRelativeLinksFromObsidianToAstro(options) {
   function visitor(node) {
     if (node.url.startsWith('http') || node.url.startsWith('/images/')) {
@@ -11,7 +12,10 @@ function fixRelativeLinksFromObsidianToAstro(options) {
     }
     if (!node.url.startsWith('/')) {
       node.url = '../../../assets/' + node.url;
-    }
+    }    
+    // Wrap the image node with a div    
+    node.value = `<div class="image-wrapper">${node.value}</div>`; // Wrap the node with a div
+  
   }
   function transform(tree) {
     visit(tree, 'image', visitor);
