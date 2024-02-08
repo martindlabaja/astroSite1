@@ -6,7 +6,6 @@ import Footer from '../components/Footer.astro';
 import { ViewTransitions } from 'astro:transitions';
 const { pageTitle } = Astro.props;
 const siteName = 'Martin ';
-import Lightbox from '@julian_cataldo/astro-lightbox/LightBox.astro';
 ---
 
 <html lang="en">
@@ -16,9 +15,9 @@ import Lightbox from '@julian_cataldo/astro-lightbox/LightBox.astro';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{siteName + pageTitle}</title>
-    <Lightbox />
-    <ViewTransitions />  
+    <title>{siteName + pageTitle}</title>   
+    <!--<script src="../scripts/box.js"></script> -->
+    <ViewTransitions />      
   </head>
 
   <body>   

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "engineering/laminar-flow-hood.md",
+                "file": "biology/agar-log.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "engineering/laminar-flow-hood.md",
+                "file": "biology/agar-log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "engineering/laminar-flow-hood.md",
+                "file": "biology/agar-log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "engineering/laminar-flow-hood.md"
+                "file": "biology/agar-log.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "8bb988e8b5235fd4",
   "lastOpenFiles": [
-    "engineering/mechanisms.mdx",
-    "engineering/laminar-flow-hood.md",
+    "engineering/electrophoresis.mdx",
+    "images/ep1.jpg",
+    "images/IMG_20240208_132411.jpg",
     "engineering/fume-hood.mdx",
+    "engineering/thermocycler.mdx",
+    "engineering/laminar-flow-hood.md",
+    "engineering/mechanisms.mdx",
     "images/p2.jpg",
     "images/p1.jpg",
     "images/~2.tmp",
@@ -163,8 +167,6 @@
     "audiovisual/video.mdx",
     "audiovisual/music.mdx",
     "audiovisual/landscape.md",
-    "audiovisual/fpv.mdx",
-    "audiovisual/dataviz.mdx",
     "audiovisual/video.md",
     "about-me/personal-philosophy.md",
     "audiovisual/fpv.md",
@@ -174,8 +176,6 @@
     "images/drone1.jpg",
     "audiovisual/microscopy.md",
     "audiovisual/music.md",
-    "images/m5.jpg",
-    "Pasted image 20240204230340.png",
     "audivisual/microscopy.md",
     "audivisual/music.md",
     "biology/about-me.md",

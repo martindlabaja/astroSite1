@@ -13,10 +13,13 @@ tags:
 ---
 <br/>
 
-![Mycelium](micro04.jpg)
+![Mycelium](lab1.jpg)
 
-The best recipe that has worked for me so far is: 
+
 ## MAE Recipe #1
+
+The best recipe that has worked for me so far.
+
 - 10g Agar Agar
 - 7.5g Malt (note: if liquid candid, add more)
 - 500 ml boiling purified water
