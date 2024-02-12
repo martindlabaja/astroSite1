@@ -1,0 +1,28 @@
+---
+layout: ../../../layouts/MarkdownPostLayout.astro
+title: Temp Array
+pubDate: 2023-06-01
+description: Precise multi-point temperature readings for chemistry setups.
+author: Martin D.C.
+image:
+  url: https://docs.astro.build/assets/full-logo-light.png
+  alt: The full Astro logo.
+tags:
+  - genetics
+  - biology
+---
+import {Image} from 'astro:assets';
+import ch1 from '../../../assets/ch1.jpg';
+import ch2 from '../../../assets/ch2.jpg';
+
+<br />
+
+This one is simple. I wanted to measure multi-point temp readings from every reaction I make so I can see how cooling works, set alarms for certain temperatures etc.
+
+
+<div class="grid">
+<div class="imgWrap" data-lightbox="true"><Image src={ch1} alt='thermoFinal'/></div>
+<div class="imgWrap" data-lightbox="true"><Image src={ch2} alt='thermoFinal'/></div>
+</div>
+
+---
