@@ -9,7 +9,6 @@ const pageTitle = "- Home Page";
 ---
 
 <WrapperLayout pageTitle={pageTitle}>
-    
     <div class="container">    
         <div class="item flex flex-wrap items-center space-x-20">  
             <div class="item2 flex-1">
@@ -94,7 +93,7 @@ const pageTitle = "- Home Page";
             
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
             <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-            <script is:inline client:load>
+            <script is:inline>
                 const swiper = new Swiper('.swiper', {
                     // Enable navigation
                     navigation: {
@@ -149,7 +148,6 @@ const pageTitle = "- Home Page";
             }
         });
     </script>
-   
    
 </WrapperLayout>
 
