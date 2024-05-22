@@ -1,23 +1,223 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/PortfolioLayout.astro';
+import WrapperLayout from '../layouts/WrapperLayout.astro';
 import myImage from "../assets/myc2SQ.jpg"; 
+import Menu from '../components/Menu.astro';
 import { Image } from 'astro:assets';
-const pageTitle = "Index";
+const pageTitle = "- Home Page";
+
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<WrapperLayout pageTitle={pageTitle}>
 
-<!--from public, but now can pass a width, height  -->    
-<!--<Image src="/images/myc2SQ.jpg" alt="A description of my image." 
-width={100} height={100}/> -->  
+    <div class="container">    
+        <div class="item flex flex-wrap items-center space-x-20">  
+            
+            <div class="item2 flex-1">
+                <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
+                <label class="block text-xs mb-2">reverse-engineering the universe</label> 
+            </div>
+            <div class="item2 flex-1">
+                <img src="/icons/of.png" alt="Discord Icon" class="min-w-[150px] min-h-[150px] max-w-[270px] max-h-[270px] invert"/>
+            </div>
+            
+            
+            <div class="item2 flex-1">
+                Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
+            </div>   
+            
+        </div>  
+    </div> 
 
-<!-- from assets `alt` is mandatory on the Image component -->
+    <div class="container">   
+        <!-- Item 1   -->
+        <div class="item">
+            <div id="mc_embed_shell">
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                <div id="mc_embed_signup">
+                    <form action="https://opticalframeworks.us17.list-manage.com/subscribe/post?u=e3c52e8a81faba7b4d1a7e917&amp;id=a6e9dda7e4&amp;f_id=00e5c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscription-form" target="_blank">
+                        <div id="mc_embed_signup_scroll">
+                            <h2 class="text-xl font-bold mb-4 text-white">Never miss a project!</h2>
+                            <div class="mb-4 mc-field-group">
+                            <label class="block text-white mb-2" for="mce-EMAIL">Email Address</label>
+                            <input type="email" name="EMAIL" class="required email w-full px-3 py-2 text-white bg-transparent border border-white rounded-full" id="mce-EMAIL" required="" value="">
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                            </div>
+                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                            <input type="text" name="b_e3c52e8a81faba7b4d1a7e917_a6e9dda7e4" tabindex="-1" value="">
+                            </div>
+                           
+                            <div class="optionalParent">
+                                
+                                <div class="clear foot">
+                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe w-full m-0 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" value="Subscribe" style="margin: 0;">
+                                    <p style="margin: 0px auto;">
+                                    <a href="http://eepurl.com/iQj2qI" title="Mailchimp - email marketing made easy and fun">
+                                        
+                                    </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>                
+            </div>
+            <hr>
+            By subscibing you will get e-mail notifications to keep up with my new projects. :)
+            
+        </div>  
 
-<Image
-  src={myImage}
-  widths={[240, 540, 720, myImage.width]}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${myImage.width}px`}
-  alt="A description of my image."
-/>
-</BaseLayout>
+        <!-- Item 2   -->
+        <div class="item"> 
+            <h2>Album ColdTear</h2>
+            <div class="image-container"><img src="https://f4.bcbits.com/img/a1120519328_65"/></div>
+                <div class="container">
+                    <h3>Price: 3.0 €</h3>       
+                    <button>
+                        <a href="#" class="paddle_button" data-display-mode="overlay"data-locale="en" data-success-url="http://localhost:4321/"
+                                data-items='[
+                                {
+                                    "priceId": "pri_01hy901f7jxm8pexpz6a3pg81w",
+                                    "quantity": 1
+                                }
+                                ]'> Buy now</a>
+                    </button> 
+                </div>
+        </div> 
+        
+        <!-- Item 3   -->
+        <div class="item">
+            <div class="menu">
+                <Menu/>
+            </div>    
+        </div>
+        
+    </div> 
+
+
+ <!-- Mailchimp start! -->
+ <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+ <script type="text/javascript">
+     (function($) {
+     window.fnames = new Array();
+     window.ftypes = new Array();
+     fnames[0] = 'EMAIL';
+     ftypes[0] = 'email';
+     fnames[1] = 'FNAME';
+     ftypes[1] = 'text';
+     fnames[2] = 'LNAME';
+     ftypes[2] = 'text';
+     fnames[3] = 'ADDRESS';
+     ftypes[3] = 'address';
+     fnames[4] = 'PHONE';
+     ftypes[4] = 'phone';
+     fnames[5] = 'BIRTHDAY';
+     ftypes[5] = 'birthday';
+     }(jQuery));
+     var $mcj = jQuery.noConflict(true);
+ </script>
  
+ <!-- Paddle start! -->
+ <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+ <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
+       if (typeof Paddle !== 'undefined') {
+         Paddle.Environment.set("sandbox");
+         Paddle.Initialize({ 
+             token: "test_4253750475a07bbd5d302e14d6b" // replace with a client-side token
+         });
+       } else {
+         console.error('Paddle is not defined');
+       }
+     });
+ </script>
+
+
+</WrapperLayout>
+
+
+
+
+<style>
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size)/ 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: absolute;
+  left: 1%;
+  bottom: 3%;
+  z-index: 50;
+  height: 5px;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;     
+    margin-top: 20px;    
+}
+
+/* Mailchimp stuff */
+.subscribe {
+    background-color: rgba(63, 176, 172, 0.5); 
+    cursor:pointer;
+}
+.subscribe:hover {
+    background-color: rgba(63, 176, 172, 0.7); /* Change the opacity or color as needed */
+}
+#mc_embed_signup #mce-success-response {
+    font-size: 12px;
+    color: aliceblue;
+    display: flex;   
+}   
+#mc_embed_signup div.response {
+ padding: 0;
+ margin:0;
+ margin-bottom:10px;
+}
+#mc_embed_signup div#mce-responses {
+ padding:0;
+ padding-bottom: 10px;
+ margin:0;
+ margin-top: -5px;
+}
+#mc_embed_signup form {
+    margin:0;
+}
+</style>

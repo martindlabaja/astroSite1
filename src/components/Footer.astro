@@ -4,6 +4,20 @@ const year = new Date().getFullYear();
 ---
 
 <div class='footer'>
-    <div class='footerText'>&copy; Martin D. {year}</div>
+    <div class='footerText'>&copy; Martin D. C. {year}</div>
     <Social />
 </div>
+
+<style>
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;  
+  padding: 10px;
+}
+.footerText {
+  display: flex;    
+  flex-grow: 1;
+}
+</style>
