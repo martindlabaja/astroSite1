@@ -9,22 +9,31 @@ const pageTitle = "- Home Page";
 ---
 
 <WrapperLayout pageTitle={pageTitle}>
-    <div class="container">    
-        <div class="item flex flex-wrap items-center space-x-20">  
+    <div class="container">  
+
+        <div class="item flex flex-wrap justify-center items-center ">  
+
             <div class="item2 flex-1">
                 <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
                 <label class="block text-xs mb-2">reverse-engineering the universe</label> 
             </div>
-            <div class="item2 flex-1">
-                <img src="/icons/of.png" alt="Discord Icon" class="min-w-[150px] min-h-[150px] max-w-[270px] max-h-[270px] invert"/>
+
+            <div class="item2 flex-2 m-20">
+                <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[220px] invert"/>
             </div>
-            <div class="item2 flex-1">
+
+            <div class="item2 flex-1 ">
+                <div class="names max-w-[200px] ">
                 Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
+                </div>
             </div>   
+            
         </div>  
+
     </div> 
 
-    <div class="container">   
+    <div class="container">  
+
         <!-- Item 1 -->
         <div class="item">
             <div id="mc_embed_shell">
@@ -60,8 +69,7 @@ const pageTitle = "- Home Page";
             By subscribing you will get e-mail notifications to keep up with my new projects. :)
         </div>  
 
-        <!-- Item 2 -->
-        
+        <!-- Item 2 -->        
         <div class="item">
 
             <div class="swiper">
@@ -102,8 +110,7 @@ const pageTitle = "- Home Page";
                     },
                 });
                 </script>            
-        </div>
-        
+        </div>        
         
         <!-- Item 3 -->
         <div class="item">
@@ -152,7 +159,9 @@ const pageTitle = "- Home Page";
 </WrapperLayout>
 
 <style>
-
+    .item2 {
+        margin:0;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -190,4 +199,5 @@ const pageTitle = "- Home Page";
     #mc_embed_signup form {
         margin: 0;
     }
+
 </style>
