@@ -11,19 +11,19 @@ const pageTitle = "- Home Page";
 <WrapperLayout pageTitle={pageTitle}>
     <div class="container">  
 
-        <div class="item flex flex-wrap justify-center items-center ">  
+        <div class="item flex flex-wrap justify-center items-center">  
 
-            <div class="item2 flex-1">
+            <div class="item2 flex-1">                     
                 <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
-                <label class="block text-xs mb-2">reverse-engineering the universe</label> 
+                <label class="block text-xs mb-2">reverse-engineering the universe</label>                                    
             </div>
 
-            <div class="item2 flex-2 m-20">
+            <div class="item2 flex-2">
                 <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[220px] invert"/>
             </div>
 
             <div class="item2 flex-1 ">
-                <div class="names max-w-[200px] ">
+                <div class="names max-w-[300px] ">
                 Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
                 </div>
             </div>   
@@ -71,42 +71,89 @@ const pageTitle = "- Home Page";
 
         <!-- Item 2 -->        
         <div class="item">
-
+            Projects
             <div class="swiper">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
-                        <h2>Album Aether Blueprints</h2>
-                        <div class="image-container"><img src="https://f4.bcbits.com/img/a3039503083_65"/></div>
-                        <div class="container">
-                            <h3>Price: 2.5 €</h3>       
-                            <button>
-                                <a href="#" class="paddle_button" data-display-mode="overlay" data-locale="en" data-success-url="http://localhost:4321/" data-items='[{"priceId": "pri_01hy901f7jxm8pexpz6a3pg81w","quantity": 1}]'> Buy now</a>
-                            </button> 
-                        </div>
+                        <h2>Microscopy</h2>
+                        <div class="image-container">
+                            <a href="/posts/biology/microscopy/"><img src="../../images/square/sqMicro.jpg"/></a>
+                        </div>                     
                     </div>
+
                     <div class="swiper-slide">
-                        <h2>Album ColdTear</h2>
-                        <div class="image-container"><img src="https://f4.bcbits.com/img/a1120519328_65"/></div>
-                        <div class="container">
-                            <h3>Price: 3.0 €</h3>       
-                            <button>
-                                <a href="#" class="paddle_button" data-display-mode="overlay" data-locale="en" data-success-url="http://localhost:4321/" data-items='[{"priceId": "pri_01hy901f7jxm8pexpz6a3pg81w","quantity": 1}]'> Buy now</a>
-                            </button> 
-                        </div>
+                        <h2>DIY PCR Thermocycler</h2>
+                        <div class="image-container">
+                            <a href="/posts/engineering/thermocycler/"><img src="../../images/square/sqThermo.jpg"/></a>
+                        </div>                     
                     </div>
+
+                    <div class="swiper-slide">
+                        <h2>Molecular visualization</h2>
+                        <div class="image-container">
+                            <a href="/posts/biology/molecular-vis/"><img src="../../images/square/sqViz.jpg"/></a>
+                        </div>                     
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Bio Cultures</h2>
+                        <div class="image-container">
+                            <a href="/posts/biology/agar-log/"><img src="../../images/square/sqMyc.jpg"/></a>
+                        </div>                     
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>DIY Laboratory</h2>
+                        <div class="image-container">
+                            <a href="/posts/engineering/fume-hood/"><img src="../../images/square/sqLab.jpg"/></a>
+                        </div>                     
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Laminar Flowhood</h2>
+                        <div class="image-container">
+                            <a href="/posts/engineering/laminar-flow-hood/"><img src="../../images/square/sqLaminar.jpg"/></a>
+                        </div>                     
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Woodwork</h2>
+                        <div class="image-container">
+                            <a href="/posts/engineering/woodwork/"><img src="../../images/square/sqWood.jpg"/></a>
+                        </div>                     
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Landscape Photography</h2>
+                        <div class="image-container">
+                            <a href="/posts/audiovisual/landscape/"><img src="../../images/square/sqScot.jpg"/></a>
+                        </div>                     
+                    </div>
+                    
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
             
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
             <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
             <script is:inline>
                 const swiper = new Swiper('.swiper', {
+                    loop: true,
                     // Enable navigation
                     navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                    autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: true,
                     },
                 });
                 </script>            
@@ -117,7 +164,9 @@ const pageTitle = "- Home Page";
             <div class="menu">
                 <Menu/>
             </div>    
-        </div>             
+        </div>   
+        
+        
        
     </div> <!-- Container 2 -->
 
