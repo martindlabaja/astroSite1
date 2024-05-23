@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/PortfolioLayout.astro';
+import WrapperLayout from '../layouts/WrapperLayout.astro';
+import myImage from "../assets/myc2SQ.jpg"; 
+import Menu from '../components/Menu.astro';
+import { Image } from 'astro:assets';
+const pageTitle = "- Home Page";
+
+---
+
+<WrapperLayout pageTitle={pageTitle}>
+
+
+
+    <div class="container">  
+    
+        
+        <!-- Item 1 -->
+        <div class="item">
+            <div class="menu">
+                <h2 class="text-xl font-bold mb-4 text-white">Now running:</h2>
+                
+                <li>Unreal Engine 5 Solar System Simulation</li>
+                <input type="checkbox" checked>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+            </div>    
+        </div>  
+        <div class="item">
+            <div class="menu">
+                <h2 class="text-xl font-bold mb-4 text-white">Upcoming projects:</h2>
+                <li>Sofware: Unreal Engine protein visualizer</li>
+                <li>Engineering: Autonomous drone</li>
+                <li>Sofware: Unreal Engine universe micro-to-macro</li>
+                <li>Genetics: DNA Extraction</li>
+                <li>Music: Nature controlled synth patches</li>
+            </div>    
+        </div>    
+        
+        <div class="body-spacer"/>
+        
+       
+    </div> <!-- Container 2 -->
+
+    <div class="container">
+        <div class="item">
+            <h2 class="text-xl font-bold mb-4 text-white">Unreal Engine 5 Solar System Simulation</h2>
+            <img src="../../public/images/temp.jpg"
+        </div>
+    </div>
+
+
+   
+</WrapperLayout>
+
+<style>
+
+    .item {
+        flex:  30%; /* Each item takes up 30% of the container width */
+        min-width: 350px; /* Minimum width of each item */  
+        padding: 40px; /* Example padding */
+        margin: 5px; /* Example margin */
+        border-radius: 20px;
+        word-wrap: break-word; /* For legacy support */
+        overflow-wrap: break-word; /* Modern support */
+        white-space: normal;
+        /* background-color: #3fb0ac18; */
+        background-color: #3fb0ac0e;
+        backdrop-filter: blur(5px);
+    }
+    .item2 {
+        margin:0;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-top: 20px;
+    }
+
+    .subscribe {
+        background-color: rgba(63, 176, 172, 0.5); 
+        cursor: pointer;
+    }
+    .subscribe:hover {
+        background-color: rgba(63, 176, 172, 0.7); /* Change the opacity or color as needed */
+    }
+    .swiper-button-next, .swiper-button-prev {
+        color: aliceblue;
+   
+    }
+
+    li {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: auto; /* Adjust to content */
+    height: auto; /* Adjust to content */
+    border: 2px solid #3fb0ac3f; /* Border color similar to the checkbox */
+    border-radius: 3px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    cursor: pointer;
+    outline: none; /* Remove default focus outline */
+    vertical-align: middle;
+    padding: 5px 10px; /* Some padding around text */
+    margin: 5px 0; /* Space between list items */
+    list-style-type: none; /* Remove default list-style */
+}
+
+
+    /* Mailchimp subscribe css */
+    #mc_embed_signup #mce-success-response {
+        font-size: 12px;
+        color: aliceblue;
+        display: flex;
+    }
+    #mc_embed_signup div.response {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #mc_embed_signup div#mce-responses {
+        padding: 0;
+        padding-bottom: 10px;
+        margin: 0;
+        margin-top: -5px;
+    }
+    #mc_embed_signup form {
+        margin: 0;
+    }
+    @media (max-width: 450px) {    
+        .logo-small {
+            transform:scale(1.3);
+            margin-left: -10px;
+        }
+        .item2{
+
+            transform:scale(0.9);
+        }
+      
+        }
+    @media (max-width: 800px) {    
+
+        .small-screen {      
+        display:block;
+        }
+
+        .larger-than-small-screen {      
+        display: none;
+        }
+    }
+    @media (min-width: 800px) {    
+
+        .small-screen {      
+        display:none;
+        }
+
+        .larger-than-small-screen {      
+        display: block;
+        }
+        }
+</style>

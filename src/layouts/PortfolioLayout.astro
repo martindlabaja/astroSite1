@@ -9,14 +9,7 @@ const { pageTitle } = Astro.props;
 const siteName = 'Martin ';
 ---
 <WrapperLayout>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{siteName + pageTitle}</title>     
-    <ViewTransitions />          
-</head>
+
    
       <!-- Horizontal Container -->
       <div class="container flex-1">      
@@ -54,6 +47,21 @@ const siteName = 'Martin ';
   flex:1;
   width: 200px;
 }
+.content a {
+  color: #3fb0ac;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.content a:hover {
+  color: #abd4d3;
+}
+.content h1,h2,h3,h4,strong {
+  color: #3fb0ac;
+}
+.content ul {
+  list-style-type: circle;
+}
+
 
 @media (max-width: 1200px) {
     .filler {      

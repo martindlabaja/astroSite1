@@ -2,11 +2,11 @@
     <div class="links">
       
       <a href="/#">HOME</a>
-      <a href="/portfolio">PROJECTS</a>
+      <a href="/projects">PROJECTS</a>
       <a href="/portfolio">PORTFOLIO</a>
 
     </div>  
-    <div class="nav-items">
+    <div class="nav-items text-right">
 
       <a href="https://discord.gg/xugGPASq" target="_blank" rel="noopener noreferrer">
         <button>
@@ -41,8 +41,10 @@
 
 .links {
   display: flex;
-  margin-right: 80px;
+  flex-wrap:wrap;
+  margin-right: 5px;
   gap: 50px;
+  
 }
 .icon-button {
   background: none;
@@ -50,5 +52,20 @@
   padding: 0;
   cursor: pointer;
   outline: inherit;
+}
+
+
+@media (max-width: 450px) {    
+
+      
+}
+@media (max-width: 520px) {    
+  .links { 
+    gap: 15px;
+  }
+}
+
+@media (min-width: 800px) {    
+
 }
 </style>

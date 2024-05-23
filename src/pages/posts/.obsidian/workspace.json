@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about-me/skills.mdx",
+                "file": "engineering/thermocycler.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about-me/skills.mdx",
+                "file": "engineering/thermocycler.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about-me/skills.mdx",
+                "file": "engineering/thermocycler.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about-me/skills.mdx"
+                "file": "engineering/thermocycler.mdx"
               }
             }
           }
@@ -148,33 +148,32 @@
   },
   "active": "ca6ee14d0964e11a",
   "lastOpenFiles": [
+    "engineering/laminar-flow-hood.md",
+    "engineering/fume-hood.mdx",
+    "images/lab2.jpg",
+    "images/flow14 (2).jpg",
+    "images/flow14 (1).jpg",
+    "images/IMG_20230603_164939_473.jpg",
+    "images/IMG_20230607_195356_552.jpg",
+    "images/flow0.jpg",
+    "images/flow0.jpg.crdownload",
+    "biology/microscopy.mdx",
+    "engineering/electrophoresis.mdx",
+    "about-me/skills.mdx",
     "audiovisual/fpv.mdx",
     "engineering/woodwork.mdx",
     "biology/agar-log.md",
-    "engineering/electrophoresis.mdx",
     "images/ep1.jpg",
     "images/IMG_20240208_132411.jpg",
-    "engineering/fume-hood.mdx",
     "engineering/thermocycler.mdx",
-    "engineering/laminar-flow-hood.md",
     "engineering/mechanisms.mdx",
     "images/p2.jpg",
     "images/p1.jpg",
     "images/~2.tmp",
-    "images/p2.JPG",
-    "images/~1.tmp",
-    "images/p1.JPG",
-    "biology/molecular-vis.mdx",
-    "biology/microscopy.mdx",
-    "audiovisual/video.mdx",
     "audiovisual/landscape.md",
     "audiovisual/video.md",
     "about-me/personal-philosophy.md",
     "audiovisual/fpv.md",
-    "images/drone3.png",
-    "images/drone3.jpg",
-    "images/drone2.jpg",
-    "images/drone1.jpg",
     "audiovisual/microscopy.md",
     "audiovisual/music.md",
     "audivisual/microscopy.md",

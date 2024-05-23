@@ -9,27 +9,66 @@ const pageTitle = "- Home Page";
 ---
 
 <WrapperLayout pageTitle={pageTitle}>
-    <div class="container">  
 
-        <div class="item flex flex-wrap justify-center items-center">  
-
-            <div class="item2 flex-1">                     
-                <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
-                <label class="block text-xs mb-2">reverse-engineering the universe</label>                                    
-            </div>
-
-            <div class="item2 flex-2">
-                <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[220px] invert"/>
-            </div>
-
-            <div class="item2 flex-1 ">
-                <div class="names max-w-[300px] ">
-                Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
+    <div class="small-screen"> 
+        <div class="container">  
+            <div class="item flex justify-center items-center"> 
+                <img src="/icons/of.png" alt="Discord Icon" class="logo-small object-contain min-w-[60px] max-w-[120px] invert mr-5"/>
+                <div class="item2 flex-1 sm:">                     
+                    <h1 class="text-4xl  font-bold text-white my-2">Optical Frameworks</h1>   
+                    <div class="text-sm">reverse-engineering the universe </div>                               
                 </div>
-            </div>   
-            
-        </div>  
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="larger-than-small-screen">  
+        <div class="container">  
 
+            <div class="item flex flex-wrap justify-center items-center">  
+
+                <div class="item2 flex-1">                     
+                    <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
+                    reverse-engineering the universe                                
+                </div>
+
+                <div class="item2 flex-2">
+                    <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[220px] invert"/>
+                </div>
+
+                <div class="item2 flex-1 p-0">
+                    <div class="names max-w-[300px]">
+                    Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
+                    </div>
+                </div>   
+                
+            </div>  
+
+        </div> 
+    </div>  -->
+
+    <div class="larger-than-small-screen">  
+        <div class="container">  
+
+            <div class="item flex items-center justify-between">  
+
+                <div class="tw-item flex-1">                     
+                    <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
+                    reverse-engineering the universe                                
+                </div>
+
+                <div class="tw-item flex-1 ml-20 mr-5">
+                    <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[220px] invert"/>
+                </div>
+
+                    <div class="names max-w-[300px]">
+                    Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
+                    </div>
+                </div>   
+                
+            </div>  
+
+        </div> 
     </div> 
 
     <div class="container">  
@@ -208,6 +247,19 @@ const pageTitle = "- Home Page";
 </WrapperLayout>
 
 <style>
+    .item {
+        flex:  30%; /* Each item takes up 30% of the container width */
+        min-width: 350px; /* Minimum width of each item */  
+        padding: 40px; /* Example padding */
+        margin: 5px; /* Example margin */
+        border-radius: 20px;
+        word-wrap: break-word; /* For legacy support */
+        overflow-wrap: break-word; /* Modern support */
+        white-space: normal;
+        /* background-color: #3fb0ac18; */
+        background-color: #3fb0ac0e;
+        backdrop-filter: blur(5px);
+    }
     .item2 {
         margin:0;
     }
@@ -217,6 +269,7 @@ const pageTitle = "- Home Page";
         max-width: 1200px;
         margin-top: 20px;
     }
+
     .subscribe {
         background-color: rgba(63, 176, 172, 0.5); 
         cursor: pointer;
@@ -248,5 +301,35 @@ const pageTitle = "- Home Page";
     #mc_embed_signup form {
         margin: 0;
     }
+    @media (max-width: 450px) {    
+        .logo-small {
+            transform:scale(1.3);
+            margin-left: -10px;
+        }
+        .item2{
 
+            transform:scale(0.9);
+        }
+      
+        }
+    @media (max-width: 800px) {    
+
+        .small-screen {      
+        display:block;
+        }
+
+        .larger-than-small-screen {      
+        display: none;
+        }
+    }
+    @media (min-width: 800px) {    
+
+        .small-screen {      
+        display:none;
+        }
+
+        .larger-than-small-screen {      
+        display: block;
+        }
+        }
 </style>
