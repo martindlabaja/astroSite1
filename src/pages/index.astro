@@ -13,39 +13,14 @@ const pageTitle = "- Home Page";
     <div class="small-screen"> 
         <div class="container">  
             <div class="item flex justify-center items-center"> 
-                <img src="/icons/of.png" alt="Discord Icon" class="logo-small object-contain min-w-[60px] max-w-[120px] invert mr-5"/>
+                <img src="/icons/of.png" alt="Discord Icon" class="logo-small min-w-[60px] max-w-[95px] invert mr-5 pl-4 opacity-90"/>
                 <div class="item2 flex-1 sm:">                     
-                    <h1 class="text-4xl  font-bold text-white my-2">Optical Frameworks</h1>   
+                    <h1 class="text-3xl  font-bold text-white my-2">Optical Frameworks</h1>   
                     <div class="text-sm">reverse-engineering the universe </div>                               
                 </div>
             </div>
         </div>
     </div>
-<!-- 
-    <div class="larger-than-small-screen">  
-        <div class="container">  
-
-            <div class="item flex flex-wrap justify-center items-center">  
-
-                <div class="item2 flex-1">                     
-                    <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
-                    reverse-engineering the universe                                
-                </div>
-
-                <div class="item2 flex-2">
-                    <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[220px] invert"/>
-                </div>
-
-                <div class="item2 flex-1 p-0">
-                    <div class="names max-w-[300px]">
-                    Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
-                    </div>
-                </div>   
-                
-            </div>  
-
-        </div> 
-    </div>  -->
 
     <div class="larger-than-small-screen">  
         <div class="container">  
@@ -58,10 +33,10 @@ const pageTitle = "- Home Page";
                 </div>
 
                 <div class="tw-item flex-1 ml-20 mr-5">
-                    <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[220px] invert"/>
+                    <img src="/icons/of.png" alt="Discord Icon" class="object-contain min-w-[120px] max-w-[180px] invert opacity-90"/>
                 </div>
 
-                    <div class="names max-w-[300px]">
+                    <div class="names max-w-[300px] ">
                     Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
                     </div>
                 </div>   
@@ -117,7 +92,7 @@ const pageTitle = "- Home Page";
                     <div class="swiper-slide">
                         <h2>Microscopy</h2>
                         <div class="image-container">
-                            <a href="/posts/biology/microscopy/"><img src="../../images/square/sqMicro.jpg"/></a>
+                            <a href="/posts/biology/microscopy/" class="p-0 m0"><img src="../../images/square/sqMicro.jpg"/></a>
                         </div>                     
                     </div>
 
@@ -249,8 +224,7 @@ const pageTitle = "- Home Page";
 <style>
     .item {
         flex:  30%; /* Each item takes up 30% of the container width */
-        min-width: 350px; /* Minimum width of each item */  
-        padding: 40px; /* Example padding */
+        min-width: 350px; /* Minimum width of each item */         
         margin: 5px; /* Example margin */
         border-radius: 20px;
         word-wrap: break-word; /* For legacy support */
@@ -273,14 +247,18 @@ const pageTitle = "- Home Page";
     .subscribe {
         background-color: rgba(63, 176, 172, 0.5); 
         cursor: pointer;
+        
     }
     .subscribe:hover {
         background-color: rgba(63, 176, 172, 0.7); /* Change the opacity or color as needed */
     }
+
     .swiper-button-next, .swiper-button-prev {
         color: aliceblue;
    
     }
+
+
     /* Mailchimp subscribe css */
     #mc_embed_signup #mce-success-response {
         font-size: 12px;
@@ -300,6 +278,31 @@ const pageTitle = "- Home Page";
     }
     #mc_embed_signup form {
         margin: 0;
+    }
+    #mc_embed_signup .foot {
+        display: flex;
+      
+        width: 100%;
+        align-items: center;
+    }
+    #mc_embed_signup input {
+        width: 100%;
+    }
+    #mc_embed_signup .mc-field-group {
+        width: 100%;
+    }
+    #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+        display: inline-block;
+        margin: 2px 0 1em 0;
+        padding: 3px;
+        background-color: rgb(11 36 115 / 85%);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: normal;
+        z-index: 1;
+        color: #fffcfc;
     }
     @media (max-width: 450px) {    
         .logo-small {
