@@ -1,18 +1,16 @@
 ---
-import BaseLayout from '../layouts/PortfolioLayout.astro';
 import WrapperLayout from '../layouts/WrapperLayout.astro';
-import myImage from "../assets/myc2SQ.jpg"; 
 import Menu from '../components/Menu.astro';
-import { Image } from 'astro:assets';
+import MailChimp from '../components/MailChimp.astro';
+import SwiperProjects from '../components/SwiperProjects.astro';
 const pageTitle = "- Home Page";
-
 ---
 
 <WrapperLayout pageTitle={pageTitle}>
 
     <div class="small-screen"> 
         <div class="container">  
-            <div class="item flex justify-center items-center"> 
+            <div class="item item p-0 sm:p-5 flex justify-center items-center"> 
                 <img src="/icons/of.png" alt="Discord Icon" class="logo-small min-w-[60px] max-w-[95px] invert mr-5 pl-4 opacity-90"/>
                 <div class="item2 flex-1 sm:">                     
                     <h1 class="text-3xl  font-bold text-white my-2">Optical Frameworks</h1>   
@@ -24,9 +22,7 @@ const pageTitle = "- Home Page";
 
     <div class="larger-than-small-screen">  
         <div class="container">  
-
-            <div class="item flex items-center justify-between">  
-
+            <div class="item item p-5 sm:p-10 flex items-center justify-between">
                 <div class="tw-item flex-1">                     
                     <h1 class="text-4xl font-bold mb-4 text-white">Optical Frameworks</h1>   
                     reverse-engineering the universe                                
@@ -38,306 +34,78 @@ const pageTitle = "- Home Page";
 
                     <div class="names max-w-[300px] ">
                     Optical Frameworks is an interdisciplinary project that merges the worlds of art, science, and technology.
-                    </div>
-                </div>   
-                
+                    </div>                
             </div>  
-
         </div> 
     </div> 
 
     <div class="container">  
 
         <!-- Item 1 -->
-        <div class="item">
-            <div id="mc_embed_shell">
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-                <div id="mc_embed_signup">
-                    <form action="https://opticalframeworks.us17.list-manage.com/subscribe/post?u=e3c52e8a81faba7b4d1a7e917&amp;id=a6e9dda7e4&amp;f_id=00e5c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscription-form" target="_blank">
-                        <div id="mc_embed_signup_scroll">
-                            <h2 class="text-xl font-bold mb-4 text-white">Never miss a project!</h2>
-                            <div class="mb-4 mc-field-group">
-                                <label class="block text-white mb-2" for="mce-EMAIL">Email Address</label>
-                                <input type="email" name="EMAIL" class="required email w-full px-3 py-2 text-white bg-transparent border border-white rounded-full" id="mce-EMAIL" required="" value="">
-                            </div>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display: none;"></div>
-                                <div class="response" id="mce-success-response" style="display: none;"></div>
-                            </div>
-                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                                <input type="text" name="b_e3c52e8a81faba7b4d1a7e917_a6e9dda7e4" tabindex="-1" value="">
-                            </div>
-                            <div class="optionalParent">
-                                <div class="clear foot">
-                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe w-full m-0 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" value="Subscribe" style="margin: 0;">
-                                    <p style="margin: 0px auto;">
-                                        <a href="http://eepurl.com/iQj2qI" title="Mailchimp - email marketing made easy and fun"></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>                
-            </div>
-            <hr>
-            By subscribing you will get e-mail notifications to keep up with my new projects. :)
+        <div class="item p-5 sm:p-10">
+            <MailChimp />
         </div>  
 
         <!-- Item 2 -->        
-        <div class="item">
+        <div class="item p-5 sm:p-10">
             Projects
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <h2>Microscopy</h2>
-                        <div class="image-container">
-                            <a href="/posts/biology/microscopy/" class="p-0 m0"><img src="../../images/square/sqMicro.jpg"/></a>
-                        </div>                     
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>DIY PCR Thermocycler</h2>
-                        <div class="image-container">
-                            <a href="/posts/engineering/thermocycler/"><img src="../../images/square/sqThermo.jpg"/></a>
-                        </div>                     
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>Molecular visualization</h2>
-                        <div class="image-container">
-                            <a href="/posts/biology/molecular-vis/"><img src="../../images/square/sqViz.jpg"/></a>
-                        </div>                     
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>Bio Cultures</h2>
-                        <div class="image-container">
-                            <a href="/posts/biology/agar-log/"><img src="../../images/square/sqMyc.jpg"/></a>
-                        </div>                     
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>DIY Laboratory</h2>
-                        <div class="image-container">
-                            <a href="/posts/engineering/fume-hood/"><img src="../../images/square/sqLab.jpg"/></a>
-                        </div>                     
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>Laminar Flowhood</h2>
-                        <div class="image-container">
-                            <a href="/posts/engineering/laminar-flow-hood/"><img src="../../images/square/sqLaminar.jpg"/></a>
-                        </div>                     
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>Woodwork</h2>
-                        <div class="image-container">
-                            <a href="/posts/engineering/woodwork/"><img src="../../images/square/sqWood.jpg"/></a>
-                        </div>                     
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>Landscape Photography</h2>
-                        <div class="image-container">
-                            <a href="/posts/audiovisual/landscape/"><img src="../../images/square/sqScot.jpg"/></a>
-                        </div>                     
-                    </div>
-                    
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-            <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-            <script is:inline>
-                const swiper = new Swiper('.swiper', {
-                    loop: true,
-                    // Enable navigation
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    },
-                    autoplay: {
-                    delay: 3500,
-                    disableOnInteraction: true,
-                    },
-                });
-                </script>            
+            <SwiperProjects />      
         </div>        
         
         <!-- Item 3 -->
-        <div class="item">
+        <div class="item p-5 sm:p-10">
             <div class="menu">
                 <Menu/>
             </div>    
         </div>   
         
-        
-       
-    </div> <!-- Container 2 -->
+    </div> 
 
-    <!-- Mailchimp start! -->
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">
-        (function($) {
-            window.fnames = new Array();
-            window.ftypes = new Array();
-            fnames[0] = 'EMAIL';
-            ftypes[0] = 'email';
-            fnames[1] = 'FNAME';
-            ftypes[1] = 'text';
-            fnames[2] = 'LNAME';
-            ftypes[2] = 'text';
-            fnames[3] = 'ADDRESS';
-            ftypes[3] = 'address';
-            fnames[4] = 'PHONE';
-            ftypes[4] = 'phone';
-            fnames[5] = 'BIRTHDAY';
-            ftypes[5] = 'birthday';
-        }(jQuery));
-        var $mcj = jQuery.noConflict(true);
-    </script>
- 
-    <!-- Paddle start! -->
-    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof Paddle !== 'undefined') {
-                Paddle.Environment.set("sandbox");
-                Paddle.Initialize({ token: "test_4253750475a07bbd5d302e14d6b" });
-            } else {
-                console.error('Paddle is not defined');
-            }
-        });
-    </script>
-   
+
 </WrapperLayout>
 
 <style>
     .item {
-        flex:  30%; /* Each item takes up 30% of the container width */
-        min-width: 350px; /* Minimum width of each item */         
-        margin: 5px; /* Example margin */
+        flex:  30%; 
+        min-width: 350px;          
+        margin: 5px;
         border-radius: 20px;
         word-wrap: break-word; /* For legacy support */
         overflow-wrap: break-word; /* Modern support */
         white-space: normal;
-        /* background-color: #3fb0ac18; */
         background-color: #3fb0ac0e;
         backdrop-filter: blur(5px);
     }
-    .item2 {
-        margin:0;
-    }
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin-top: 20px;
-    }
 
-    .subscribe {
-        background-color: rgba(63, 176, 172, 0.5); 
-        cursor: pointer;
-        
-    }
-    .subscribe:hover {
-        background-color: rgba(63, 176, 172, 0.7); /* Change the opacity or color as needed */
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-        color: aliceblue;
-   
-    }
-
-
-    /* Mailchimp subscribe css */
-    #mc_embed_signup #mce-success-response {
-        font-size: 12px;
-        color: aliceblue;
-        display: flex;
-    }
-    #mc_embed_signup div.response {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    #mc_embed_signup div#mce-responses {
-        padding: 0;
-        padding-bottom: 10px;
-        margin: 0;
-        margin-top: -5px;
-    }
-    #mc_embed_signup form {
-        margin: 0;
-    }
-    #mc_embed_signup .foot {
-        display: flex;
-      
-        width: 100%;
-        align-items: center;
-    }
-    #mc_embed_signup input {
-        width: 100%;
-    }
-    #mc_embed_signup .mc-field-group {
-        width: 100%;
-    }
-    #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
-        display: inline-block;
-        margin: 2px 0 1em 0;
-        padding: 3px;
-        background-color: rgb(11 36 115 / 85%);
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        font-size: 14px;
-        font-weight: normal;
-        z-index: 1;
-        color: #fffcfc;
-    }
+    /*--------------------------------------*/
+    /*          Mobile Container            */
+    /*--------------------------------------*/
     @media (max-width: 450px) {    
         .logo-small {
             transform:scale(1.3);
             margin-left: -10px;
         }
-        .item2{
-
+        .item2 {
             transform:scale(0.9);
-        }
-      
-        }
-    @media (max-width: 800px) {    
-
+        }     
+    }
+    @media (max-width: 800px) {   
         .small-screen {      
-        display:block;
+            display:block;
         }
-
         .container .item:nth-child(2) {
             order: -1; /* Moves the second item to the first position */
         }
-
         .larger-than-small-screen {      
-        display: none;
+            display: none;
         }
     }
     @media (min-width: 800px) {    
-
         .small-screen {      
-        display:none;
+            display:none;
         }
-
-
         .larger-than-small-screen {      
-        display: block;
+            display: block;
         }
-        }
+    }
 </style>

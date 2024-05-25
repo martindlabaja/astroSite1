@@ -6,8 +6,6 @@
   font-family: 'IaWriter Mono';
   src: url('..public/fonts/ia-writer-mono.woff2') format('woff2'),
       url('..public/fonts/ia-writer-mono.woff') format('woff');
-  /* Add more src formats if available */
-  /* Specify font-weight and font-style if necessary */
 }
 
 /*--------------------------------------*/
@@ -48,7 +46,7 @@ body {
   min-width: 300px;   
   margin: 5px; 
   border-radius: 20px;
-  padding: 25px;
+  /* padding: 25px; */
   background-color: #3fb0ac0e;
   backdrop-filter: blur(5px);
 }
@@ -56,7 +54,6 @@ body {
 /*--------------------------------------*/
 /*           Content styles             */
 /*--------------------------------------*/
-
 .content a {
   color: #3fb0ac;
   text-decoration: underline;
@@ -102,8 +99,6 @@ summary.accordion-header {
   color: #39d3ce; /* Adjusted menu item color */
   text-decoration: none;  
 }
-
-
 
 /*--------------------------------------*/
 /*         Additional Styles            */

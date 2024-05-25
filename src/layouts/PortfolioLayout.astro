@@ -1,37 +1,30 @@
 ---
-// ---------- BASE LAYOUT ---------- 
-
 import WrapperLayout from './WrapperLayout.astro';
 import Menu from '../components/Menu.astro';
-import Footer from '../components/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
 const { pageTitle } = Astro.props;
 const siteName = 'Martin ';
 ---
-<WrapperLayout>
 
+<WrapperLayout pageTitle={pageTitle}>
    
       <!-- Horizontal Container -->
       <div class="container flex-1">      
         
-        <div class="menu mb-5 ml-2">
+        <div class="menu mb-5 ml-2 p-5 sm:p-10">
           <!-- <div class="logo" transition:animate="slide"><a href="/">PORTFOLIO</a></div>       -->
           <Menu />      
         </div>
 
         <div class="content">
-          <div class="item">
+          <div class="item p-5 sm:p-10">
             <slot />  
           </div>            
         </div>   
         
-        <div class="filler">
-          
-        </div>
+        <div class="filler"></div>
 
       </div>     
-    
-      
+          
 </WrapperLayout>
 
 <style>

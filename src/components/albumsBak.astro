@@ -40,3 +40,17 @@
                 });
                 </script>            
         </div>   
+
+
+    <!-- Paddle start! -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof Paddle !== 'undefined') {
+                Paddle.Environment.set("sandbox");
+                Paddle.Initialize({ token: "test_4253750475a07bbd5d302e14d6b" });
+            } else {
+                console.error('Paddle is not defined');
+            }
+        });
+    </script>

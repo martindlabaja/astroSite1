@@ -2,11 +2,9 @@
 import PortfolioLayout from './PortfolioLayout.astro';
 const { frontmatter } = Astro.props;
 import Lightbox from '@julian_cataldo/astro-lightbox/LightBox.astro';
+
 ---
 <Lightbox />
-<style>
-  .postTitle h1 { margin: 0em 0em 1em}
-</style>
 
 <PortfolioLayout pageTitle={'- '+frontmatter.title}>  
   <div class="postTitle"><h1>{frontmatter.title}</h1></div>
@@ -14,4 +12,8 @@ import Lightbox from '@julian_cataldo/astro-lightbox/LightBox.astro';
   <p><em>{frontmatter.description}</em></p>
   <slot />  
 </PortfolioLayout>
+
+<style>
+  .postTitle h1 { margin: 0em 0em 1em}
+</style>
 

@@ -1,0 +1,91 @@
+<div class="swiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <h2>Microscopy</h2>
+            <div class="image-container">
+                <a href="/posts/biology/microscopy/" class="p-0 m0"><img src="../../images/square/sqMicro.jpg"/></a>
+            </div>                     
+        </div>
+
+        <div class="swiper-slide">
+            <h2>DIY PCR Thermocycler</h2>
+            <div class="image-container">
+                <a href="/posts/engineering/thermocycler/"><img src="../../images/square/sqThermo.jpg"/></a>
+            </div>                     
+        </div>
+
+        <div class="swiper-slide">
+            <h2>Molecular visualization</h2>
+            <div class="image-container">
+                <a href="/posts/biology/molecular-vis/"><img src="../../images/square/sqViz.jpg"/></a>
+            </div>                     
+        </div>
+
+        <div class="swiper-slide">
+            <h2>Bio Cultures</h2>
+            <div class="image-container">
+                <a href="/posts/biology/agar-log/"><img src="../../images/square/sqMyc.jpg"/></a>
+            </div>                     
+        </div>
+
+        <div class="swiper-slide">
+            <h2>DIY Laboratory</h2>
+            <div class="image-container">
+                <a href="/posts/engineering/fume-hood/"><img src="../../images/square/sqLab.jpg"/></a>
+            </div>                     
+        </div>
+
+        <div class="swiper-slide">
+            <h2>Laminar Flowhood</h2>
+            <div class="image-container">
+                <a href="/posts/engineering/laminar-flow-hood/"><img src="../../images/square/sqLaminar.jpg"/></a>
+            </div>                     
+        </div>
+
+        <div class="swiper-slide">
+            <h2>Woodwork</h2>
+            <div class="image-container">
+                <a href="/posts/engineering/woodwork/"><img src="../../images/square/sqWood.jpg"/></a>
+            </div>                     
+        </div>
+
+        <div class="swiper-slide">
+            <h2>Landscape Photography</h2>
+            <div class="image-container">
+                <a href="/posts/audiovisual/landscape/"><img src="../../images/square/sqScot.jpg"/></a>
+            </div>                     
+        </div>
+        
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script is:inline>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        // Enable navigation
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        autoplay: {
+        delay: 3500,
+        disableOnInteraction: true,
+        },
+    });
+</script>      
+
+<style>
+.swiper-button-next, .swiper-button-prev {
+    color: aliceblue;   
+}
+</style>
