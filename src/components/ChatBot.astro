@@ -1,0 +1,28 @@
+---
+ import '../styles/chatbot.css';
+---
+   
+   <!-- Chatbot HTML -->
+    <button class="chatbot-toggler">
+        <img src="../../icons/communication.png" class="invert"/>
+        <span class="material-symbols-rounded"></span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>Chatbot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi 👋<br>Do you have a question about my project or goals?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+      <script src="../scripts/chatbot.js"></script>
+      <!-- End of Chatbot HTML -->
