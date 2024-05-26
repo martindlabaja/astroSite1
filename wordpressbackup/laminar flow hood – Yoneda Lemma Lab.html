@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://yonedalemma.net/build-a-lab/laminar-flow-hood/ -->
+<html class="no-js slb" lang="cs" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, ::-webkit-calendar-picker-indicator, img.Wirisformula {
+    filter: invert(100%) hue-rotate(180deg) brightness(85%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #000000;
+   --darkreader-neutral-text: #c6c1bc;
+   --darkreader-selection-background: #003295;
+   --darkreader-selection-text: #d7d5d1;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: #000000 !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: initial;
+}
+html, body {
+    background-color: #000000;
+}
+html, body {
+    border-color: #5a5244;
+    color: #d7d5d1;
+}
+a {
+    color: #167aef;
+}
+table {
+    border-color: #394144;
+}
+mark {
+    color: #d7d5d1;
+}
+::placeholder {
+    color: #9d968b;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #242800 !important;
+    color: #d7d5d1 !important;
+}
+::-webkit-scrollbar {
+    background-color: #020506;
+    color: #968e83;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #292f32;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3d4448;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #2d3336;
+}
+::-webkit-scrollbar-corner {
+    background-color: #000000;
+}
+::selection {
+    background-color: #003295 !important;
+    color: #d7d5d1 !important;
+}
+::-moz-selection {
+    background-color: #003295 !important;
+    color: #d7d5d1 !important;
+}
+}</style>
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<title>laminar flow hood – Yoneda Lemma Lab</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="https://stats.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="Yoneda Lemma Lab » RSS zdroj" href="https://yonedalemma.net/feed/">
+<link rel="alternate" type="application/rss+xml" title="Yoneda Lemma Lab » RSS komentářů" href="https://yonedalemma.net/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Yoneda Lemma Lab » RSS komentářů pro laminar flow hood" href="https://yonedalemma.net/build-a-lab/laminar-flow-hood/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/yonedalemma.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./laminar flow hood – Yoneda Lemma Lab_files/wp-emoji-release.min.js.stažený soubor" type="text/javascript" defer=""></script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./laminar flow hood – Yoneda Lemma Lab_files/style.min.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<style id="wp-block-library-inline-css">
+.has-text-align-justify{text-align:justify;}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="jetpack-videopress-video-block-view-css" href="./laminar flow hood – Yoneda Lemma Lab_files/view.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="mediaelement-css" href="./laminar flow hood – Yoneda Lemma Lab_files/mediaelementplayer-legacy.min.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="wp-mediaelement-css" href="./laminar flow hood – Yoneda Lemma Lab_files/wp-mediaelement.min.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="classic-theme-styles-css" href="./laminar flow hood – Yoneda Lemma Lab_files/classic-themes.min.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="guaven_sqlcharts_main_style-css" href="./laminar flow hood – Yoneda Lemma Lab_files/guaven_sqlcharts.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="smntcs-retro-style-css" href="./laminar flow hood – Yoneda Lemma Lab_files/style.css" media="all"><style class="darkreader darkreader--cors" media="screen">:root {
+	
+	--nord0: #2e3440;
+	--nord1: #3b4252;
+	--nord2: #434c5e;
+	--nord3: #4c566a;
+	
+	--nord4: #d8dee9;
+	--nord5: #e5e9f0;
+	--nord6: #eceff4;
+	
+	--nord7: #8fbcbb;
+	--nord8: #88c0d0;
+	--nord9: #81a1c1;
+	--nord10: #5e81ac;
+	
+	--nord11: #bf616a;
+	--nord12: #d08770;
+	--nord13: #ebcb8b;
+	--nord14: #a3be8c;
+	--nord15: #b48ead;
+}
+
+
+
+
+
+
+
+
+
+html {
+	font-size: 62.5%;
+	
+}
+
+body {
+	background: var(--nord0);
+	box-sizing: content-box;
+	color: var(--nord9);
+	font-family: Hack, monospace;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	text-align: left;
+	overflow-y: visible;
+	padding: 1rem 2rem;
+	max-width: 580px;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	-webkit-font-smoothing: antialiased;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--nord4);
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: normal;
+	-webkit-margin-after: 2rem;
+	margin-block-end: 2rem;
+	-webkit-margin-before: 2rem;
+	margin-block-start: 2rem;
+}
+
+a {
+	color: var(--nord4);
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+a:focus,
+a:hover {
+	border-bottom: 1px solid;
+}
+
+hr {
+	margin: 2rem 0;
+	clear: both;
+	color: transparent;
+	border-color: transparent;
+	background-color: transparent;
+	border-top: 1px solid var(--nord3);
+}
+
+
+.wp-caption {
+	color: var(--nord4);
+}
+
+.wp-caption-text {
+	color: var(--nord4);
+}
+
+.sticky {
+	background: var(--nord1);
+	border: 1px solid var(--nord2);
+	padding: 1em;
+	margin: 0 -1em;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	-webkit-clip-path: none;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	right: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+.gallery-caption {
+	color: var(--nord4);
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1em;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1em;
+}
+
+.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+}
+
+
+.wp-block-image figcaption {
+	color: var(--nord4);
+}
+
+figure {
+	-webkit-margin-before: 0;
+	margin-block-start: 0;
+	-webkit-margin-after: 0;
+	margin-block-end: 0;
+	-webkit-margin-start: 0;
+	margin-inline-start: 0;
+	-webkit-margin-end: 0;
+	margin-inline-end: 0;
+}
+
+
+#site-title h1,
+#site-title h2 {
+	color: var(--nord4);
+	margin-bottom: 0.5em;
+}
+
+#site-description h2 {
+	color: var(--nord4);
+	margin: 0 0 0.5rem;
+}
+
+
+.menu {
+	margin: 1em 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.menu li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+.menu li:last-of-type::after {
+	content: none;
+}
+
+article p:first-of-type {
+	margin-top: 0.5rem;
+}
+
+#header-menu {
+	display: inline-block;
+	margin-top: 0.5rem;
+	width: calc(100% - 30px);
+}
+
+
+
+
+#site-content-posts article {
+	margin: 2em 0 4em;
+}
+
+#site-content-posts article img:not(.zoomImg),
+#site-content-posts article figure {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.search-form input[type="search"] {
+	background: var(--nord0);
+	border: 1px solid var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord10);
+	padding: 0.5em 1em;
+	width: 79%;
+}
+
+.search-form input[type="submit"] {
+	background: var(--nord1);
+	border: 1px solid var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord9);
+	padding: 0.5em 1em;
+	width: 19%;
+}
+
+
+.comment-form label {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.comment-form .comment-form-comment {
+	margin-top: 2em;
+}
+
+.comment-form .comment-form-comment textarea {
+	background: var(--nord0);
+	border-color: var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord10);
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+.comment-form .form-submit {
+	margin-bottom: 0.5em;
+}
+
+.comment-form .form-submit input[type="submit"] {
+	background: var(--nord1);
+	border-color: var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord9);
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+
+.post-pagination,
+.site-content-pagination {
+	clear: both;
+	padding: 2em 0;
+}
+
+.post-pagination {
+	display: flex;
+}
+
+.post-pagination-previous {
+	padding-right: 1%;
+	width: 50%;
+}
+
+.post-pagination-next {
+	padding-left: 1%;
+	text-align: right;
+	width: 50%;
+}
+
+
+#site-footer {
+	color: var(--nord4);
+}
+
+#footer-widget-wrapper {
+	margin-bottom: 1em;
+}
+
+@media screen and (min-width: 580px) {
+	#footer-widget-wrapper {
+		display: flex;
+	}
+	#footer-widget-wrapper-left,
+	#footer-widget-wrapper-right {
+		padding-right: 2em;
+		width: 50%;
+	}
+}
+
+#footer-credits-wrapper {
+	margin-bottom: 1em;
+}
+
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+	padding: 0.5em;
+}
+
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment {
+	background: var(--nord0);
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+}
+
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+	background: var(--nord1);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+}
+
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
+	border: 1em solid var(--nord3);
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	top: 0;
+	margin: -2em 0 0 2em;
+}
+
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+	border-bottom: 1px solid var(--nord3);
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:focus,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:hover {
+	background: var(--nord2);
+	border-bottom-color: var(--nord3);
+	color: var(--nord4);
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active::before {
+	box-shadow: 2px 2px 0 var(--nord3);
+	border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+	border: 1px solid var(--nord1);
+	background-color: var(--nord1);
+	border-radius: 2px 2px 0 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+	border-bottom-right-radius: 2px;
+	box-shadow: 2px 2px 0 var(--nord1);
+	border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+	border-bottom-left-radius: 2px;
+	box-shadow: -2px 2px 0 var(--nord1);
+	border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:focus,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+	color: var(--nord4);
+	border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+	border-bottom: 1px solid var(--nord3);
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active::after {
+	box-shadow: -2px 2px 0 var(--nord3);
+}
+
+.woocommerce .product_meta > span {
+	display: block;
+}
+
+.woocommerce .woocommerce-customer-details address {
+	border-radius: 2px;
+	border: 1px solid var(--nord3);
+	box-sizing: border-box;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+	width: 20%;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+	width: 78%;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li {
+	margin: 1em 0;
+	list-style: none;
+}
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+	background: var(--nord1);
+	color: var(--nord4);
+	border-top: 3px solid var(--nord11);
+}
+
+.woocommerce-error::before {
+	color: var(--nord4);
+}
+
+.woocommerce-info {
+	border-top-color: var(--nord10);
+}
+
+.woocommerce-info::before {
+	color: var(--nord4);
+}
+
+.woocommerce-message {
+	border-top-color: var(--nord14);
+}
+
+.woocommerce form .form-row.woocommerce-invalid .select2-container,
+.woocommerce form .form-row.woocommerce-invalid input.input-text,
+.woocommerce form .form-row.woocommerce-invalid select {
+	border-color: var(--nord11);
+}
+
+.woocommerce form .form-row.woocommerce-invalid label {
+	color: var(--nord11);
+}
+
+.woocommerce form .form-row.woocommerce-validated .select2-container,
+.woocommerce form .form-row.woocommerce-validated input.input-text,
+.woocommerce form .form-row.woocommerce-validated select {
+	border-color: var(--nord3);
+}
+
+.woocommerce .woocommerce-ordering {
+	margin: 0 0 2em;
+}
+
+.woocommerce .woocommerce-ordering select {
+	background: var(--nord1);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+}
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+	background: var(--nord3);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+	height: 2.5em;
+	padding: 0.5em;
+}
+
+
+.woocommerce input[type="text"],
+.woocommerce textarea {
+	background: var(--nord3);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+	height: 1.5em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+
+.woocommerce textarea {
+	height: 5em;
+}
+
+
+.add_gift_card_form #wc_gc_cart_redeem_form button {
+	background: var(--nord2);
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+	color: var(--nord4);
+	height: 1.5em;
+	padding: 0.5em;
+}
+
+.select2-container--default .select2-selection--single {
+	background: var(--nord3);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+	border-radius: 2px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	background: var(--nord3);
+	color: var(--nord4);
+}
+
+.select2-container--default .select2-results__option {
+	color: var(--nord4);
+}
+
+.select2-container--default .select2-results__option[aria-selected="true"],
+.select2-container--default .select2-results__option[data-selected="true"] {
+	background: var(--nord1);
+	outline: none;
+}
+
+.select2-dropdown {
+	background: var(--nord3);
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+	scrollbar-color: var(--nord3);
+}
+
+.select2-container--default .select2-results > .select2-results__options ::-webkit-scrollbar {
+	background: var(--nord3);
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	background: var(--nord3);
+	border: 1px solid var(--nord4);
+	border-radius: 2px;
+	color: var(--nord4);
+}
+
+.woocommerce form .form-row textarea {
+	height: 10em;
+}
+
+.woocommerce form .form-row input.input-text::-ms-input-placeholder,
+.woocommerce form .form-row textarea::-ms-input-placeholder,
+.woocommerce form .form-row input.input-text::placeholder,
+.woocommerce form .form-row textarea::placeholder {
+	color: var(--nord9);
+}
+
+.woocommerce form .form-row .required {
+	color: var(--nord4);
+}
+
+.woocommerce ul.products li.product .price {
+	color: var(--nord4);
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+	background: var(--nord1);
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+	color: var(--nord4);
+	display: block;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+	background: var(--nord3);
+	color: var(--nord4);
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+	border: 1px solid var(--nord3);
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+	border-right: 1px solid var(--nord3);
+}
+
+.woocommerce nav.woocommerce-pagination ul li:last-of-type {
+	border-right: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+	background: var(--nord1);
+	border: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+	background: var(--nord3);
+	color: var(--nord4);
+}
+
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+	max-width: 300px;
+}
+
+.woocommerce a.remove {
+	color: var(--nord4) !important;
+}
+
+.woocommerce a.remove:hover {
+	color: var(--nord4) !important;
+	background: var(--nord11);
+}
+
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+	background: var(--nord3);
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+	color: var(--nord4);
+	height: 2.5em;
+	line-height: 1;
+	width: 120px;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text:-ms-input-placeholder {
+	color: var(--nord9);
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text::-ms-input-placeholder {
+	color: var(--nord9);
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text::placeholder {
+	color: var(--nord9);
+}
+
+.woocommerce-cart .product-thumbnail a {
+	border: none;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals table th {
+	width: 50%;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals table td {
+	text-align: right;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals tr td,
+.woocommerce-cart .cart-collaterals .cart_totals tr th {
+	border-top: 1px solid var(--nord3);
+}
+
+.woocommerce table.shop_table {
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+}
+
+.woocommerce-cart table.cart th {
+	background: var(--nord1);
+	color: var(--nord4);
+}
+
+.woocommerce table.shop_table td {
+	border-top: 1px solid var(--nord3);
+}
+
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot td,
+.woocommerce table.shop_table tfoot th {
+	border-top: 1px solid var(--nord3);
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+	background: var(--nord1);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+	background: var(--nord3);
+	color: var(--nord4);
+}</style><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="smntcs-retro-search-style-css" href="./laminar flow hood – Yoneda Lemma Lab_files/search.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="slb_core-css" href="./laminar flow hood – Yoneda Lemma Lab_files/app.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="smntcs-retro-color-scheme-css" href="./laminar flow hood – Yoneda Lemma Lab_files/charlestone-light.css" media="screen"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="dashicons-css" href="./laminar flow hood – Yoneda Lemma Lab_files/dashicons.min.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="stylesheet" id="jetpack_css-css" href="./laminar flow hood – Yoneda Lemma Lab_files/jetpack.css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/jquery.min.js.stažený soubor" id="jquery-core-js"></script><meta name="darkreader" content="e914347124b941fe8c8626d03186f6e7"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #633800 !important;
+    border-color: #c59b00 !important;
+    color: #e2d7b5 !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #001e2d !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #00020c !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #000000 !important;
+}
+.tou-uknfeu {
+    background-color: #050000 !important;
+}
+.tou-6i3zyv {
+    background-color: #003d53 !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.google-material-icons {
+    font-family: 'Google Material Icons' !important;
+}
+.google-symbols {
+    font-family: 'Google Symbols Subset', 'Google Symbols' !important;
+}
+.material-icons-extended {
+    font-family: 'Material Icons Extended' !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+.oui-icon {
+    font-family: 'Oui Icons' !important;
+}</style>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/jquery-migrate.min.js.stažený soubor" id="jquery-migrate-js"></script>
+<script id="guaven_sqlcharts_chartjs-js-extra">
+var guaven_sqlcharts_notice_dismissed = {"action":"guaven_sqlcharts_onboarding_notice_dismissed","nonce":"e7d4f031b4"};
+</script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/bundle.min.js.stažený soubor" id="guaven_sqlcharts_chartjs-js"></script>
+<link rel="https://api.w.org/" href="https://yonedalemma.net/wp-json/"><link rel="alternate" type="application/json" href="https://yonedalemma.net/wp-json/wp/v2/posts/141"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://yonedalemma.net/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://yonedalemma.net/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
+<link rel="canonical" href="https://yonedalemma.net/build-a-lab/laminar-flow-hood/">
+<link rel="shortlink" href="https://yonedalemma.net/?p=141">
+<link rel="alternate" type="application/json+oembed" href="https://yonedalemma.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyonedalemma.net%2Fbuild-a-lab%2Flaminar-flow-hood%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://yonedalemma.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyonedalemma.net%2Fbuild-a-lab%2Flaminar-flow-hood%2F&amp;format=xml">
+	<style>img#wpstats{display:none}</style><style class="darkreader darkreader--sync" media="screen"></style>
+		<style type="text/css">body { margin: auto; }</style><style class="darkreader darkreader--sync" media="screen"></style><style type="text/css">body { max-width: 960px; }</style><style class="darkreader darkreader--sync" media="screen"></style><style type="text/css" id="wp-custom-css">header {
+    margin-top: 100px;
+}
+body {
+    background: #001;   
+    color:#bde;
+    font-family: Hack, monospace;
+    font-size: 1.3rem;    
+    max-width: 580px; 
+}
+
+#site-title h1, #site-title h2 {
+    font-size: 2.7rem;
+}
+
+#site-description {
+    font-size: 3.7rem;
+}
+
+a {
+    color: #ffdfb2;
+}
+
+#site-description h2 {
+	  color: #ffdfb2;
+} 
+   
+
+h1, h2, h3, h4, h5, h6 {
+    color:#bde;
+}</style><style class="darkreader darkreader--sync" media="screen"></style>
+	<link rel="stylesheet" type="text/css" href="./laminar flow hood – Yoneda Lemma Lab_files/style(1).css"><style class="darkreader darkreader--sync" media="screen"></style><link rel="stylesheet" type="text/css" href="./laminar flow hood – Yoneda Lemma Lab_files/style(2).css"><style class="darkreader darkreader--sync" media="screen"></style><link rel="stylesheet" type="text/css" href="./laminar flow hood – Yoneda Lemma Lab_files/style(3).css"><style class="darkreader darkreader--sync" media="screen"></style></head>
+
+	<body class="post-template-default single single-post postid-141 single-format-standard wp-embed-responsive">
+
+		<a class="skip-link screen-reader-text" href="https://yonedalemma.net/build-a-lab/laminar-flow-hood/#site-content">Skip to the content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+		<header>
+
+			<div id="header-title">
+
+				<div id="site-title"><h2><a href="https://yonedalemma.net/">Yoneda Lemma Lab</a></h2></div><!-- #site-title -->				<div id="site-description"><h2>reverse-engineering the universe</h2></div><!-- #site-description -->
+			</div><!-- #header-title -->
+
+			<div id="header-menu-wrapper">
+
+				<nav id="header-menu">
+
+					<ul id="menu-main-menu" class="menu"><li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-34"><a href="https://yonedalemma.net/">goals &amp; projects</a></li>
+<li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="https://yonedalemma.net/building-a-lab/">building a lab</a></li>
+<li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-591"><a href="https://yonedalemma.net/microscopy/microscopy/">microscopy</a></li>
+<li id="menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a href="https://yonedalemma.net/molecular-visualization/">molecular visualization</a></li>
+<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="https://yonedalemma.net/audiovisual-%e8%a7%86%e5%90%ac/">audiovisual</a></li>
+<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="https://yonedalemma.net/coding-adventures/">coding adventures</a></li>
+<li id="menu-item-405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-405"><a href="https://yonedalemma.net/about-contact/">about</a></li>
+</ul>
+				</nav>
+
+				
+				<hr>
+
+			</div><!-- #header-menu -->
+
+		</header>
+
+<main id="site-content" role="main">
+
+	<section id="site-content-posts">
+
+		
+<article id="post-141" class="post-141 post type-post status-publish format-standard has-post-thumbnail hentry category-build-a-lab">
+
+<img width="960" height="503" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220728_114629_868-960x503.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-960x503.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-300x157.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-1024x536.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-768x402.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-1536x804.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-2048x1072.jpg 2048w" sizes="(max-width: 960px) 100vw, 960px"><div class="post-date">Date: 28/07/2022</div><!-- .post-date --><div class="post-categories">Categories: <a href="https://yonedalemma.net/category/build-a-lab/" title="let&#39;s build a lab">let's build a lab</a></div><!-- .post-categories -->
+<h2 class="wp-block-heading"><strong>laminar flow-hood / biosafety cabinet</strong></h2>
+
+
+
+<p>Next, I had to take place where all the biology/genetics stuff will be happening in a clean, non-contaminated area. This is the tougher one to solve.<br><br>I had a few options:<br></p>
+
+
+
+<ol><li><span style="text-decoration: underline;"><strong>using a clean tent </strong></span><br><br>+ could be sterile and work best for keeping sterile, if the ventilation system of the closed tent could incorporate HEPA filtering<br>+ easy to build <br>+ cheapest variant<br><br>– might need a decontamination chamber added, also the process of going in/ out of a tent while keeping the hygiene of person in between the entrance <br>– not other people friendly (you just can’t demonstrate/show it to another person, other than camera and display outside of the tent, which decreases joy of both parties involved <br><br><br></li><li><span style="text-decoration: underline;"><strong>building a laminar flow cabinet </strong></span>(either „desktop“ box one, or a fume-hood-like structure with HEPA)<br><br>+ construction is almost the same as in fume-hood I have already just built<br>+ can have both parties involved feel the joy of not staring into displays<br><br>– fumes and stuff goes into your face, so you would need to work with non-breathable chemicals inside the fume-hood, leading to multiple transfers between boxes <br><br><br></li><li><span style="text-decoration: underline;"><strong>biosafety cabinet, class II A2</strong></span> (winner)<br><br>after more internet search, this one has it all for me:<br><br>+ biosafety cabinets do not blow fumes/ contaminants into your face<br>+ can be used in different modes<br>+ has HEPA<br><br>– HEPA has to be replaced every 6 months of use, can’t be cleaned<br>– ?<br><br></li></ol>
+
+
+
+<h2 class="wp-block-heading"><strong>build</strong></h2>
+
+
+
+<p>Firstly, I opted for commercial design brochures and noted the dimensions and ratios. This is what I came up with: </p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex">
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/bl01.jpg" data-slb-active="1" data-slb-asset="384285043" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="823" data-id="240" src="./laminar flow hood – Yoneda Lemma Lab_files/bl01-1024x823.jpg" alt="" class="wp-image-240" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/bl01-1024x823.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/bl01-300x241.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/bl01-768x617.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/bl01-960x772.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/bl01.jpg 1397w" sizes="(max-width: 1024px) 100vw, 1024px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/b02.jpg" data-slb-active="1" data-slb-asset="1010170527" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="826" data-id="241" src="./laminar flow hood – Yoneda Lemma Lab_files/b02-1024x826.jpg" alt="" class="wp-image-241" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/b02-1024x826.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/b02-300x242.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/b02-768x620.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/b02-960x775.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/b02.jpg 1403w" sizes="(max-width: 1024px) 100vw, 1024px"></a></figure>
+<figcaption class="blocks-gallery-caption">biosafety cabinet (azure colored box is a HEPA filter)</figcaption></figure>
+
+
+
+<p>The design has changed a bit later and I have also realized that I need to switch to Fusion360 software so it could communicate with my CNC machine better because I will be needing it this time for sure, as cutting precise angles with hand for me is always not as precise as to satisfy my compulsive part.<br><br><span style="text-decoration: underline;"><strong>final design:</strong></span></p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-3 is-layout-flex">
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/b03.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1062607595" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="939" data-id="247" src="./laminar flow hood – Yoneda Lemma Lab_files/b03-1024x939.jpg" alt="" class="wp-image-247" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/b03-1024x939.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/b03-300x275.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/b03-768x704.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/b03-960x880.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/b03.jpg 1253w" sizes="(max-width: 1024px) 100vw, 1024px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/b04.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1873119336" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="591" data-id="248" src="./laminar flow hood – Yoneda Lemma Lab_files/b04-1024x591.jpg" alt="" class="wp-image-248" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/b04-1024x591.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/b04-300x173.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/b04-768x443.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/b04-1536x887.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/b04-960x554.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/b04.jpg 1983w" sizes="(max-width: 1024px) 100vw, 1024px"></a></figure>
+<figcaption class="blocks-gallery-caption">final design in fusion360</figcaption></figure>
+
+
+
+<p><span style="text-decoration: underline;"><strong>photos from the build process:</strong></span></p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-5 is-layout-flex">
+<figure class="wp-block-image size-medium"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112808_666-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="856733559" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="300" height="174" data-id="265" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220701_112808_666-300x174.jpg" alt="" class="wp-image-265" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112808_666-300x174.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112808_666-1024x595.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112808_666-768x446.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112808_666-1536x892.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112808_666-2048x1189.jpg 2048w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112808_666-960x557.jpg 960w" sizes="(max-width: 300px) 100vw, 300px"></a><figcaption>cnc-ing the side-profile</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-medium"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112941_871-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1298073261" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="300" height="203" data-id="270" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220701_112941_871-300x203.jpg" alt="" class="wp-image-270" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112941_871-300x203.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112941_871-1024x692.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112941_871-768x519.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112941_871-1536x1038.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112941_871-2048x1384.jpg 2048w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220701_112941_871-960x649.jpg 960w" sizes="(max-width: 300px) 100vw, 300px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_161318_516-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="127158363" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="752" data-id="257" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220702_161318_516-1024x752.jpg" alt="" class="wp-image-257" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_161318_516-1024x752.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_161318_516-300x220.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_161318_516-768x564.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_161318_516-1536x1128.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_161318_516-2048x1505.jpg 2048w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_161318_516-960x705.jpg 960w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption>precision angles!</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_231544_449.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1510601147" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="819" height="1024" data-id="256" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220702_231544_449-819x1024.jpg" alt="" class="wp-image-256" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_231544_449-819x1024.jpg 819w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_231544_449-240x300.jpg 240w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_231544_449-768x960.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_231544_449-1229x1536.jpg 1229w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_231544_449-960x1200.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220702_231544_449.jpg 1470w" sizes="(max-width: 819px) 100vw, 819px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="829487489" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="819" height="1024" data-id="260" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220703_213346_534-819x1024.jpg" alt="" class="wp-image-260" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-819x1024.jpg 819w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-240x300.jpg 240w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-768x960.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-1229x1536.jpg 1229w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-1638x2048.jpg 1638w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-960x1200.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220703_213346_534-scaled.jpg 2048w" sizes="(max-width: 819px) 100vw, 819px"></a></figure>
+
+
+
+<figure class="wp-block-image size-medium"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220704_204403_053.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1509098944" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="254" height="300" data-id="261" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220704_204403_053-254x300.jpg" alt="" class="wp-image-261" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220704_204403_053-254x300.jpg 254w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220704_204403_053-866x1024.jpg 866w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220704_204403_053-768x908.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220704_204403_053-1299x1536.jpg 1299w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220704_204403_053-1732x2048.jpg 1732w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220704_204403_053-960x1135.jpg 960w" sizes="(max-width: 254px) 100vw, 254px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220706_211741_265.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1699724811" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="908" height="1024" data-id="258" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220706_211741_265-908x1024.jpg" alt="" class="wp-image-258" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220706_211741_265-908x1024.jpg 908w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220706_211741_265-266x300.jpg 266w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220706_211741_265-768x866.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220706_211741_265-1363x1536.jpg 1363w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220706_211741_265-960x1082.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220706_211741_265.jpg 1470w" sizes="(max-width: 908px) 100vw, 908px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1334746713" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="819" height="1024" data-id="267" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220722_192021_656-819x1024.jpg" alt="" class="wp-image-267" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-819x1024.jpg 819w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-240x300.jpg 240w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-768x960.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-1229x1536.jpg 1229w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-1638x2048.jpg 1638w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-960x1200.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_192021_656-scaled.jpg 2048w" sizes="(max-width: 819px) 100vw, 819px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_213752_890-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1061947326" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="634" data-id="271" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220722_213752_890-1024x634.jpg" alt="" class="wp-image-271" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_213752_890-1024x634.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_213752_890-300x186.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_213752_890-768x475.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_213752_890-1536x950.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_213752_890-2048x1267.jpg 2048w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220722_213752_890-960x594.jpg 960w" sizes="(max-width: 1024px) 100vw, 1024px"></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220725_195840_185-1.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="275405541" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="815" data-id="262" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220725_195840_185-1-1024x815.jpg" alt="" class="wp-image-262" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220725_195840_185-1-1024x815.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220725_195840_185-1-300x239.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220725_195840_185-1-768x611.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220725_195840_185-1-960x764.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220725_195840_185-1.jpg 1313w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption>removable HEPA holder</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220727_211612_298-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1409616770" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="771" data-id="266" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220727_211612_298-1024x771.jpg" alt="" class="wp-image-266" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220727_211612_298-1024x771.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220727_211612_298-300x226.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220727_211612_298-768x578.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220727_211612_298-1536x1157.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220727_211612_298-2048x1543.jpg 2048w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220727_211612_298-960x723.jpg 960w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption>HEPA double sealing</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1723201380" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="536" data-id="268" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220728_114629_868-1024x536.jpg" alt="" class="wp-image-268" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-1024x536.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-300x157.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-768x402.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-1536x804.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-2048x1072.jpg 2048w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220728_114629_868-960x503.jpg 960w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption>HEPA</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="390411225" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="819" height="1024" data-id="269" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220804_191215_231-819x1024.jpg" alt="" class="wp-image-269" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-819x1024.jpg 819w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-240x300.jpg 240w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-768x960.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-1229x1536.jpg 1229w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-1638x2048.jpg 1638w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-960x1200.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220804_191215_231-scaled.jpg 2048w" sizes="(max-width: 819px) 100vw, 819px"></a><figcaption>one intake to filter, other 30% out</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220807_194749_912-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1588411845" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="1024" height="602" data-id="264" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220807_194749_912-1024x602.jpg" alt="" class="wp-image-264" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220807_194749_912-1024x602.jpg 1024w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220807_194749_912-300x176.jpg 300w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220807_194749_912-768x451.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220807_194749_912-1536x902.jpg 1536w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220807_194749_912-2048x1203.jpg 2048w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220807_194749_912-960x564.jpg 960w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption>grills</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-scaled.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1902085319" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="819" height="1024" data-id="263" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220809_114316_844-1-819x1024.jpg" alt="" class="wp-image-263" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-819x1024.jpg 819w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-240x300.jpg 240w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-768x960.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-1229x1536.jpg 1229w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-1638x2048.jpg 1638w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-960x1200.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/08/IMG_20220809_114316_844-1-scaled.jpg 2048w" sizes="(max-width: 819px) 100vw, 819px"></a><figcaption>a velvet sealing for a glass</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220825_165743_150.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="294232374" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="819" height="1024" data-id="443" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220825_165743_150-819x1024.jpg" alt="" class="wp-image-443" srcset="https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220825_165743_150-819x1024.jpg 819w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220825_165743_150-240x300.jpg 240w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220825_165743_150-768x960.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220825_165743_150-1229x1536.jpg 1229w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220825_165743_150-960x1200.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220825_165743_150.jpg 1470w" sizes="(max-width: 819px) 100vw, 819px"></a><figcaption>axial ventilator flexible harness with a sealing</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220831_185631_475.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="210787948" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="819" height="1024" data-id="442" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220831_185631_475-819x1024.jpg" alt="" class="wp-image-442" srcset="https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220831_185631_475-819x1024.jpg 819w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220831_185631_475-240x300.jpg 240w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220831_185631_475-768x960.jpg 768w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220831_185631_475-1228x1536.jpg 1228w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220831_185631_475-960x1200.jpg 960w, https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220831_185631_475.jpg 1470w" sizes="(max-width: 819px) 100vw, 819px"></a><figcaption>counterweigths for sliding glass and vent recycle system</figcaption></figure>
+</figure>
+
+
+
+<p><br><br><span style="text-decoration: underline;"><strong>caviats &amp; challenges:</strong></span></p>
+
+
+
+<ol><li>everything must be sealed</li><li>air path-way is more complicated, in this design, not all air is recycled, but 30% goes out (as you can have greater „sucking“ power at the bottom but still not push too much into the filter to destroy it, this also removes fumes instead of them just cycling <br><br></li></ol>
+
+
+
+<p><strong><span style="text-decoration: underline;">finished result:</span></strong></p>
+
+
+
+<div class="wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular"><div class="tiled-gallery__gallery" data-jetpack-block-initialized="true"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:30.04715%"><figure class="tiled-gallery__item" style="height:210.1067195119724px;width:173.23784919089164px;"><a href="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220814_114728_752-838x1024.jpg" data-slb-active="1" data-slb-asset="1883162521" data-slb-group="141"><img decoding="async" srcset="https://i0.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220814_114728_752-838x1024.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i0.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220814_114728_752-838x1024.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i0.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220814_114728_752-838x1024.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i0.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220814_114728_752-838x1024.jpg?strip=info&amp;w=1470&amp;ssl=1 1470w" alt="" data-height="1797" data-id="439" data-link="https://yonedalemma.net/build-a-lab/laminar-flow-hood/attachment/img_20220814_114728_752/" data-url="https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220814_114728_752-838x1024.jpg" data-width="1470" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220814_114728_752-838x1024.jpg" data-amp-layout="responsive"></a></figure></div><div class="tiled-gallery__col" style="flex-basis:69.95285%"><figure class="tiled-gallery__item" style="height:210.1067195119724px;width:402.7621508091084px;"><a href="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220909_214837_597-1-1024x536.jpg" data-slb-active="1" data-slb-asset="225144202" data-slb-group="141"><img decoding="async" srcset="https://i1.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220909_214837_597-1-1024x536.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i1.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220909_214837_597-1-1024x536.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i1.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220909_214837_597-1-1024x536.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i1.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220909_214837_597-1-1024x536.jpg?strip=info&amp;w=1500&amp;ssl=1 1500w,https://i1.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220909_214837_597-1-1024x536.jpg?strip=info&amp;w=1800&amp;ssl=1 1800w,https://i1.wp.com/yonedalemma.net/wp-content/uploads/2022/09/IMG_20220909_214837_597-1-1024x536.jpg?strip=info&amp;w=2000&amp;ssl=1 2000w" alt="" data-height="1340" data-id="457" data-link="https://yonedalemma.net/build-a-lab/laminar-flow-hood/attachment/img_20220909_214837_597-1/" data-url="https://yonedalemma.net/wp-content/uploads/2022/09/IMG_20220909_214837_597-1-1024x536.jpg" data-width="2560" src="./laminar flow hood – Yoneda Lemma Lab_files/IMG_20220909_214837_597-1-1024x536.jpg" data-amp-layout="responsive"></a></figure></div></div></div></div>
+
+
+
+<h2 class="wp-block-heading"><strong>how it works</strong></h2>
+
+
+
+<p>a few diagrams images to explain basic idea can explain it better than I could:</p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-5 is-cropped wp-block-gallery-7 is-layout-flex">
+<figure class="wp-block-image size-full"><a href="./laminar flow hood – Yoneda Lemma Lab_files/images.png" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1910977400" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="173" height="292" data-id="278" src="./laminar flow hood – Yoneda Lemma Lab_files/images.png" alt="" class="wp-image-278"></a></figure>
+
+
+
+<figure class="wp-block-image size-full"><a href="./laminar flow hood – Yoneda Lemma Lab_files/72-1.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="743739322" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="500" height="304" data-id="282" src="./laminar flow hood – Yoneda Lemma Lab_files/72-1.jpg" alt="" class="wp-image-282" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/72-1.jpg 500w, https://yonedalemma.net/wp-content/uploads/2022/08/72-1-300x182.jpg 300w" sizes="(max-width: 500px) 100vw, 500px"></a></figure>
+
+
+
+<figure class="wp-block-image size-full"><a href="./laminar flow hood – Yoneda Lemma Lab_files/Schematic-representation-of-a-Class-IIA1-biological-safety-cabinet-A-front-opening-B.png" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="643227011" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="675" height="735" data-id="279" src="./laminar flow hood – Yoneda Lemma Lab_files/Schematic-representation-of-a-Class-IIA1-biological-safety-cabinet-A-front-opening-B.png" alt="" class="wp-image-279" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/Schematic-representation-of-a-Class-IIA1-biological-safety-cabinet-A-front-opening-B.png 675w, https://yonedalemma.net/wp-content/uploads/2022/08/Schematic-representation-of-a-Class-IIA1-biological-safety-cabinet-A-front-opening-B-276x300.png 276w" sizes="(max-width: 675px) 100vw, 675px"></a></figure>
+
+
+
+<figure class="wp-block-image size-full"><a href="./laminar flow hood – Yoneda Lemma Lab_files/class-ii-type-a2-airflow-air-split-text-600x514-1.png" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1379517957" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="600" height="514" data-id="283" src="./laminar flow hood – Yoneda Lemma Lab_files/class-ii-type-a2-airflow-air-split-text-600x514-1.png" alt="" class="wp-image-283" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/class-ii-type-a2-airflow-air-split-text-600x514-1.png 600w, https://yonedalemma.net/wp-content/uploads/2022/08/class-ii-type-a2-airflow-air-split-text-600x514-1-300x257.png 300w" sizes="(max-width: 600px) 100vw, 600px"></a></figure>
+
+
+
+<figure class="wp-block-image size-full"><a href="./laminar flow hood – Yoneda Lemma Lab_files/Fig-2_0.gif" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="2000629467" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="803" height="1488" data-id="284" src="./laminar flow hood – Yoneda Lemma Lab_files/Fig-2_0.gif" alt="" class="wp-image-284"></a></figure>
+
+
+
+<figure class="wp-block-image size-full"><a href="./laminar flow hood – Yoneda Lemma Lab_files/ClassIITypeA2.gif" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="2038347187" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="553" height="322" data-id="280" src="./laminar flow hood – Yoneda Lemma Lab_files/ClassIITypeA2.gif" alt="" class="wp-image-280"></a></figure>
+
+
+
+<figure class="wp-block-image size-full"><a href="./laminar flow hood – Yoneda Lemma Lab_files/FC10NV2IW6POP44.webp" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="726685707" data-slb-internal="0" data-slb-group="141"><img decoding="async" loading="lazy" width="306" height="387" data-id="285" src="./laminar flow hood – Yoneda Lemma Lab_files/FC10NV2IW6POP44.webp" alt="" class="wp-image-285" srcset="https://yonedalemma.net/wp-content/uploads/2022/08/FC10NV2IW6POP44.webp 306w, https://yonedalemma.net/wp-content/uploads/2022/08/FC10NV2IW6POP44-237x300.webp 237w" sizes="(max-width: 306px) 100vw, 306px"></a></figure>
+</figure>
+<div class="post-pagination"><div class="post-pagination-previous">« <a href="https://yonedalemma.net/build-a-lab/fumehood/" rel="prev">fumehood</a></div> <div class="post-pagination-next"><a href="https://yonedalemma.net/build-a-lab/pcr-machine/" rel="next">pcr machine prototype</a> »</div></div><!-- .post-date -->
+</article><!-- .post -->
+
+	</section><!-- #site-content-posts -->
+
+	<div class="site-content-pagination">
+
+		
+	</div><!-- #site-content-pagination -->
+
+</main><!-- #site-content -->
+
+		
+
+		<hr>
+
+		<footer>
+
+			<div id="footer-menu-wrapper">
+
+				<nav id="footer-menu">
+
+				
+				</nav>
+
+			</div><!-- #footer-menu-wrapper -->
+
+			<div id="footer-widget-wrapper">
+
+				<div id="footer-widget-wrapper-left">
+
+					
+				</div><!-- #footer-widget-wrapper-left -->
+
+				<div id="footer-widget-wrapper-left">
+
+					
+				</div><!-- #footer-widget-wrapper-left -->
+
+			</div><!-- #footer-widget-wrapper -->
+
+
+			<div id="footer-credits-wrapper">
+
+				/**  */
+
+			</div><!-- #footer-credits-wrapper -->
+
+		</footer>
+
+		<link rel="stylesheet" id="jetpack-block-tiled-gallery-css" href="./laminar flow hood – Yoneda Lemma Lab_files/view(1).css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
+<style id="core-block-supports-inline-css">
+.wp-block-gallery.wp-block-gallery-1,.wp-block-gallery.wp-block-gallery-3,.wp-block-gallery.wp-block-gallery-5,.wp-block-gallery.wp-block-gallery-7{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/search.js.stažený soubor" id="search-script-js"></script>
+<script defer="" src="./laminar flow hood – Yoneda Lemma Lab_files/e-202421.js.stažený soubor" id="jetpack-stats-js"></script>
+<script id="jetpack-stats-js-after">
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'208620234',post:'141',tz:'0',srv:'yonedalemma.net',j:'1:12.2.1'} ]);
+_stq.push([ "clickTrackerInit", "208620234", "141" ]);
+</script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/wp-polyfill-inert.min.js.stažený soubor" id="wp-polyfill-inert-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/regenerator-runtime.min.js.stažený soubor" id="regenerator-runtime-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/wp-polyfill.min.js.stažený soubor" id="wp-polyfill-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/dom-ready.min.js.stažený soubor" id="wp-dom-ready-js"></script>
+<script id="jetpack-block-tiled-gallery-js-extra">
+var Jetpack_Block_Assets_Base_Url = {"url":"https:\/\/yonedalemma.net\/wp-content\/plugins\/jetpack\/_inc\/blocks\/"};
+</script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/view.js.stažený soubor" id="jetpack-block-tiled-gallery-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/lib.core.js.stažený soubor" id="slb_core-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/lib.view.js.stažený soubor" id="slb_view-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/client.js.stažený soubor" id="slb-asset-slb_baseline-base-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/client(1).js.stažený soubor" id="slb-asset-slb_default-base-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/tag.item.js.stažený soubor" id="slb-asset-item-base-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/tag.ui.js.stažený soubor" id="slb-asset-ui-base-js"></script>
+<script src="./laminar flow hood – Yoneda Lemma Lab_files/handler.image.js.stažený soubor" id="slb-asset-image-base-js"></script>
+<script type="text/javascript" id="slb_footer">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB && SLB.has_child('View.init') ) { SLB.View.init({"ui_autofit":true,"ui_animate":false,"slideshow_autostart":true,"slideshow_duration":"6","group_loop":true,"ui_overlay_opacity":"0.8","ui_title_default":false,"theme_default":"slb_black","ui_labels":{"loading":"Loading","close":"Close","nav_next":"Next","nav_prev":"Previous","slideshow_start":"Start slideshow","slideshow_stop":"Stop slideshow","group_status":"Yoneda %current% of %total%"}}); }
+if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"384285043":{"id":240,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/bl01.jpg","title":"bl01","caption":"","description":""},"1010170527":{"id":241,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/b02.jpg","title":"b02","caption":"","description":""},"1062607595":{"id":247,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/b03.jpg","title":"b03","caption":"","description":""},"1873119336":{"id":248,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/b04.jpg","title":"b04","caption":"","description":""},"856733559":{"id":265,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220701_112808_666-scaled.jpg","title":"IMG_20220701_112808_666","caption":"","description":""},"1298073261":{"id":270,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220701_112941_871-scaled.jpg","title":"IMG_20220701_112941_871","caption":"","description":""},"127158363":{"id":257,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220702_161318_516-scaled.jpg","title":"IMG_20220702_161318_516","caption":"","description":""},"1510601147":{"id":256,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220702_231544_449.jpg","title":"IMG_20220702_231544_449","caption":"","description":""},"829487489":{"id":260,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220703_213346_534-scaled.jpg","title":"IMG_20220703_213346_534","caption":"","description":""},"1509098944":{"id":261,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220704_204403_053.jpg","title":"IMG_20220704_204403_053","caption":"","description":""},"1699724811":{"id":258,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220706_211741_265.jpg","title":"IMG_20220706_211741_265","caption":"","description":""},"1334746713":{"id":267,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220722_192021_656-scaled.jpg","title":"IMG_20220722_192021_656","caption":"","description":""},"1061947326":{"id":271,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220722_213752_890-scaled.jpg","title":"IMG_20220722_213752_890","caption":"","description":""},"275405541":{"id":262,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220725_195840_185-1.jpg","title":"IMG_20220725_195840_185-1","caption":"","description":""},"1409616770":{"id":266,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220727_211612_298-scaled.jpg","title":"IMG_20220727_211612_298","caption":"","description":""},"1723201380":{"id":268,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220728_114629_868-scaled.jpg","title":"IMG_20220728_114629_868","caption":"","description":""},"390411225":{"id":269,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220804_191215_231-scaled.jpg","title":"IMG_20220804_191215_231","caption":"","description":""},"1588411845":{"id":264,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220807_194749_912-scaled.jpg","title":"IMG_20220807_194749_912","caption":"","description":""},"1902085319":{"id":263,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/IMG_20220809_114316_844-1-scaled.jpg","title":"IMG_20220809_114316_844-1","caption":"","description":""},"294232374":{"id":443,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/09\/IMG_20220825_165743_150.jpg","title":"IMG_20220825_165743_150","caption":"","description":""},"210787948":{"id":442,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/09\/IMG_20220831_185631_475.jpg","title":"IMG_20220831_185631_475","caption":"","description":""},"1883162521":{"id":null,"type":"image","internal":false,"source":"https:\/\/i0.wp.com\/yonedalemma.net\/wp-content\/uploads\/2022\/09\/IMG_20220814_114728_752-838x1024.jpg?ssl=1"},"225144202":{"id":null,"type":"image","internal":false,"source":"https:\/\/i1.wp.com\/yonedalemma.net\/wp-content\/uploads\/2022\/09\/IMG_20220909_214837_597-1-1024x536.jpg?ssl=1"},"1910977400":{"id":278,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/images.png","title":"images","caption":"","description":""},"743739322":{"id":282,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/72-1.jpg","title":"72-1","caption":"","description":""},"643227011":{"id":279,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/Schematic-representation-of-a-Class-IIA1-biological-safety-cabinet-A-front-opening-B.png","title":"Schematic-representation-of-a-Class-IIA1-biological-safety-cabinet-A-front-opening-B","caption":"","description":""},"1379517957":{"id":283,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/class-ii-type-a2-airflow-air-split-text-600x514-1.png","title":"class-ii-type-a2-airflow-air-split-text-600x514-1","caption":"","description":""},"2000629467":{"id":284,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/Fig-2_0.gif","title":"Fig-2_0","caption":"","description":""},"2038347187":{"id":280,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/ClassIITypeA2.gif","title":"ClassIITypeA2","caption":"","description":""},"726685707":{"id":285,"type":"image","internal":true,"source":"https:\/\/yonedalemma.net\/wp-content\/uploads\/2022\/08\/FC10NV2IW6POP44.webp","title":"FC10NV2IW6POP44","caption":"","description":""}});} }
+/* THM */
+if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_baseline',{"name":"0,9","parent":"","styles":[{"handle":"base","uri":"https:\/\/yonedalemma.net\/wp-content\/plugins\/simple-lightbox\/themes\/baseline\/css\/style.css","deps":[]}],"layout_raw":"<div class=\"slb_container\"><div class=\"slb_content\">{{item.content}}<div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><div class=\"slb_controls\"><span class=\"slb_close\">{{ui.close}}<\/span><span class=\"slb_slideshow\">{{ui.slideshow_control}}<\/span><\/div><div class=\"slb_loading\">{{ui.loading}}<\/div><\/div><div class=\"slb_details\"><div class=\"inner\"><div class=\"slb_data\"><div class=\"slb_data_content\"><span class=\"slb_data_title\">{{item.title}}<\/span><span class=\"slb_group_status\">{{ui.group_status}}<\/span><div class=\"slb_data_desc\">{{item.description}}<\/div><\/div><\/div><div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><\/div><\/div><\/div>"}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_default',{"name":"V\u00fdchoz\u00ed (sv\u011btl\u00fd)","parent":"slb_baseline","styles":[{"handle":"base","uri":"https:\/\/yonedalemma.net\/wp-content\/plugins\/simple-lightbox\/themes\/default\/css\/style.css","deps":[]}]}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_black',{"name":"V\u00fdchoz\u00ed (tmav\u00fd)","parent":"slb_default","styles":[{"handle":"base","uri":"https:\/\/yonedalemma.net\/wp-content\/plugins\/simple-lightbox\/themes\/black\/css\/style.css","deps":[]}]}); }})})(jQuery);}/* ]]> */</script>
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+
+	
+
+
+</body></html>
