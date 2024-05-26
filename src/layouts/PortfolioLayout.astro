@@ -66,3 +66,17 @@ const siteName = 'Martin ';
     }
 }
 </style>
+
+<style is:global>
+  lite-youtube {
+      max-width: 100% !important; /* Ensures it overrides any other max-width settings */
+  }
+  lite-youtube > iframe {
+      all: unset !important;
+      width: 100% !important;
+      height: 100% !important;
+      position: absolute !important;
+      inset: 0 !important;
+      border: 0 !important;
+  }
+</style>
