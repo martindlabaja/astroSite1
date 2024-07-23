@@ -3,8 +3,10 @@ import WrapperLayout from '../layouts/WrapperLayout.astro';
 import Menu from '../components/Menu.astro';
 import MailChimp from '../components/MailChimp.astro';
 import SwiperProjects from '../components/SwiperProjects.astro';
-import CurrentProjects from '../components/CurrentProjects.astro';
 const pageTitle = "- Home Page";
+
+import {Content as PromoBanner} from '../pages/posts/about-me/skills.mdx';
+
 ---
 
 <WrapperLayout pageTitle={pageTitle}>
@@ -42,27 +44,21 @@ const pageTitle = "- Home Page";
 
     <div class="container">  
 
-        
-        <!-- Item 2 -->        
+        <!-- Item 1 -->
         <div class="item p-5 sm:p-10">
-            <CurrentProjects />      
-        </div>
-        
+            <MailChimp />
+        </div>  
+
         <!-- Item 2 -->        
         <div class="item p-5 sm:p-10">
             Projects
             <SwiperProjects />      
         </div>        
         
-        <!-- Item 1 -->
-        <div class="item p-5 sm:p-10">
-            <MailChimp />
-        </div>
-
         <!-- Item 3 -->
         <div class="item p-5 sm:p-10">
             <div class="menu">
-                <Menu/>
+                <PromoBanner/>
             </div>    
         </div>   
         
@@ -80,10 +76,8 @@ const pageTitle = "- Home Page";
         word-wrap: break-word; /* For legacy support */
         overflow-wrap: break-word; /* Modern support */
         white-space: normal;
-        /* background-color: #3fb0ac0e; */
+        background-color: #3fb0ac0e;
         backdrop-filter: blur(5px);
-        background-color: #3fb0ac5f;
-
     }
 
     /*--------------------------------------*/

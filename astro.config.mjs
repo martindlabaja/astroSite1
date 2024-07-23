@@ -13,9 +13,7 @@ function fixRelativeLinksFromObsidianToAstro(options) {
     if (!node.url.startsWith('/')) {
       node.url = '../../../assets/' + node.url;
     }    
-    // Wrap the image node with a div    
-    node.value = `<div class="image-wrapper">${node.value}</div>`; // Wrap the node with a div
-  
+ 
   }
   function transform(tree) {
     visit(tree, 'image', visitor);
