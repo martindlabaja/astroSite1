@@ -98,22 +98,24 @@ const siteName = 'Martin ';
 </style>
 
 <script>
-    function updateMenuVisibility() {
-        const largeScreenMenu = document.querySelector('.large-screen-menu');
-        const smallScreenMenu = document.querySelector('.small-screen-menu');
-        
-        if (window.innerWidth >= 800) {
-            largeScreenMenu.style.display = 'block';
-            smallScreenMenu.style.display = 'none';
-        } else {
-            largeScreenMenu.style.display = 'none';
-            smallScreenMenu.style.display = 'block';
-        }
-    }
+  function updateMenuVisibility() {
+      const largeScreenMenu = document.querySelector('.large-screen-menu') as HTMLElement | null;
+      const smallScreenMenu = document.querySelector('.small-screen-menu') as HTMLElement | null;
+      
+      if (largeScreenMenu && smallScreenMenu) {
+          if (window.innerWidth >= 800) {
+              largeScreenMenu.style.display = 'block';
+              smallScreenMenu.style.display = 'none';
+          } else {
+              largeScreenMenu.style.display = 'none';
+              smallScreenMenu.style.display = 'block';
+          }
+      }
+  }
 
-    // Initial call
-    updateMenuVisibility();
+  // Initial call
+  updateMenuVisibility();
 
-    // Update on window resize
-    window.addEventListener('resize', updateMenuVisibility);
+  // Update on window resize
+  window.addEventListener('resize', updateMenuVisibility);
 </script>
