@@ -68,6 +68,9 @@ body {
 .content ul {
   list-style-type: circle;
 }
+.content li {
+  margin-left: 20px;
+}
 
 /*--------------------------------------*/
 /*               Menu                   */
