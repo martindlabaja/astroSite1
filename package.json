@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "node src/scripts/generateNav.js && astro check && astro build",
+    "build": "node src/scripts/generateNav.js && node src/scripts/generateNavOpen.js&& astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

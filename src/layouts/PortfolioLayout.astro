@@ -1,82 +1,119 @@
 ---
 import WrapperLayout from './WrapperLayout.astro';
 import Menu from '../components/Menu.astro';
+import MenuOpen from '../components/MenuOpen.astro';
 const { pageTitle } = Astro.props;
 const siteName = 'Martin ';
 ---
 
 <WrapperLayout pageTitle={pageTitle}>
-   
-      <!-- Horizontal Container -->
-      <div class="container flex-1">      
-        
+    <!-- Horizontal Container -->
+    <div class="container flex-1">
         <div class="menu ml-2 pl-5 sm:p-10">
-          <!-- <div class="logo" transition:animate="slide"><a href="/">PORTFOLIO</a></div>       -->
-          <Menu />      
+            <!-- <div class="logo" transition:animate="slide"><a href="/">PORTFOLIO</a></div> -->
+            <div class="large-screen-menu">
+                <MenuOpen />
+            </div>
+            <div class="small-screen-menu">
+                <Menu />
+            </div>
         </div>
-
+        
         <div class="content">
-          <div class="item p-5 sm:p-10">
-            <slot />  
-          </div>    
-
-        </div>   
+            <div class="item p-5 sm:p-10">
+                <slot />
+            </div>
+        </div>
         
         <div class="filler"></div>
-
-      </div>
-      
+    </div>
 </WrapperLayout>
 
 <style>
-.menu {
-  flex: 1; 
-  min-width: 200px;
-
-}
-.content {
-  flex: 4;
-}
-.filler {
-  flex:1;
-  width: 200px;
-}
-.content a {
-  color: #3fb0ac;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-.content a:hover {
-  color: #abd4d3;
-}
-.content h1,h2,h3,h4,strong {
-  color: #3fb0ac;
-}
-.content ul {
-  list-style-type: circle;
-}
-
-
-@media (max-width: 1200px) {
-    .filler {      
-      width: 0px;
+    .menu {
+        flex: 1;
+        min-width: 200px;
     }
-    .container {      
-      flex-direction: column;
+    .content {
+        flex: 4;
     }
-}
+    .filler {
+        flex: 1;
+        width: 200px;
+    }
+    .content a {
+        color: #3fb0ac;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+    }
+    .content a:hover {
+        color: #abd4d3;
+    }
+    .content h1,h2,h3,h4,strong {
+        color: #3fb0ac;
+    }
+    .content ul {
+        list-style-type: circle;
+    }
+
+    @media (max-width: 1200px) {
+        .filler {
+            width: 0px;
+        }
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 800px) {   
+        .large-screen-menu {
+            display: none;
+        }
+        .small-screen-menu {
+            display: block;
+        }
+    }
+    @media (min-width: 800px) {    
+        .large-screen-menu {
+            display: block;
+        }
+        .small-screen-menu {
+            display: none;
+        }
+    }
 </style>
 
 <style is:global>
-  lite-youtube {
-      max-width: 100% !important; /* Ensures it overrides any other max-width settings */
-  }
-  lite-youtube > iframe {
-      all: unset !important;
-      width: 100% !important;
-      height: 100% !important;
-      position: absolute !important;
-      inset: 0 !important;
-      border: 0 !important;
-  }
+    lite-youtube {
+        max-width: 100% !important; /* Ensures it overrides any other max-width settings */
+    }
+    lite-youtube > iframe {
+        all: unset !important;
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute !important;
+        inset: 0 !important;
+        border: 0 !important;
+    }
 </style>
+
+<script>
+    function updateMenuVisibility() {
+        const largeScreenMenu = document.querySelector('.large-screen-menu');
+        const smallScreenMenu = document.querySelector('.small-screen-menu');
+        
+        if (window.innerWidth >= 800) {
+            largeScreenMenu.style.display = 'block';
+            smallScreenMenu.style.display = 'none';
+        } else {
+            largeScreenMenu.style.display = 'none';
+            smallScreenMenu.style.display = 'block';
+        }
+    }
+
+    // Initial call
+    updateMenuVisibility();
+
+    // Update on window resize
+    window.addEventListener('resize', updateMenuVisibility);
+</script>
