@@ -1,0 +1,45 @@
+---
+layout: ../../../layouts/MarkdownPostLayout.astro
+title: Custom Radioastronomy Software
+pubDate: 2023-06-01
+description: Adventures into SDR-RTL 
+author: Martin D.C.
+image:
+  url: https://docs.astro.build/assets/full-logo-light.png
+  alt: The full Astro logo.
+tags:
+  - genetics
+  - biology
+---
+import {Image} from 'astro:assets';
+
+<br />
+
+Plan: Map the distribution of hydrogen in the universe using the hydrogen line in the radio spectrum (1.42 MHz).
+<br/>
+
+The first part involved deciding on the data collection pipeline. While waiting for the hardware amplifiers to arrive, I started working on the software.
+<br/>
+
+For Windows PC, there is SDR# and GNU Radio. However, neither offered simple time-synchronized, interval-based recording options for long-term sky surveys, so I decided to create my own solution in the spirit of learning.
+<br/>
+
+I've settled on Python for the backend and JavaScript with Vue for the frontend as the GUI. The PySDR library, which is written in C, handles raw data recording (dealing with millions of samples per second).
+The Python backend manages the scheduled recording of raw IQ data and subsequent analysis.
+<br/>
+
+# Phase One: Automated Recording and Bridge Between SDR and GUI
+
+![SDR Astronomy Software](rda1.jpg)
+![SDR Astronomy Software](rda2.jpg)
+
+<br/>
+
+The next step will involve adding functionality specific to recording H-line signals, such as integration over time and finer control in filename naming with the azimuthal coordinate system saved along with the file itself.
+<br/>
+
+Afterward, we will test the hardware and work on more advanced signal analysis once we confirm that we are receiving a strong signal.
+
+---
+
+
