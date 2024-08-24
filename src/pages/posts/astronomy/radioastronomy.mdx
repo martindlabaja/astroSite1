@@ -31,39 +31,40 @@ The Python backend manages the scheduled recording of raw IQ data and subsequent
 # Phase One: Automated Recording and Bridge Between SDR and GUI
 
 ![SDR Astronomy Software](rda1.jpg)
-![SDR Astronomy Software](rda2.jpg)
+
 
 <br/>
 
 The next step will involve adding functionality specific to recording H-line signals, such as integration over time and finer control in filename naming with the azimuthal coordinate system saved along with the file itself.
 <br/>
 
-Afterward, we will test the hardware and work on more advanced signal analysis once we confirm that we are receiving a strong signal.
+
 
 ---
 
 # Phase II 
 
-After some more work on features, I realized I needed much more complex GUI so I moved to PyQT:
-
+After some more work on features, I realized I needed much more complex GUI so I moved to PyQT and abandoned the server idea.
+<br/>
+Here you can see how PyQT method turned out:
 <br/>
 
 ![SDR Astronomy Software](sdr1.jpg)
 
-Analysis of signal: settings for: bandpass, average, recording, peak detection, noise floor measurement, relative power measurement, csv processed data export
+Analysis of signal: settings for: bandpass, average, recording, peak detection, noise floor measurement, relative power measurement, csv processed data export and recording in one tab.
 
 <br/>
 
 ![SDR Astronomy Software](sdr2.jpg)
 
-Live preview featurue with IF Average (interpolation over time to increase STN ratio)
+Live preview featurue with IF Average (interpolation over time to increase STN ratio to spot weak signals)
 
 <br/>
 
 
 ![SDR Astronomy Software](sdr3.jpg)
 
-Graphing features to browse data: waterfall, spectral density, average, phase
+Graphing features to browse recorder data: waterfall, spectral density, average, phase
 
 <br/>
 
@@ -76,16 +77,15 @@ I can also select multiple recorder chunks and run quick analysis on them too, u
 
 
 
-<br/>
 
 ![SDR Astronomy Software](sdr6.jpg)
 
-Browse results of analysis directly in app ...
+Or browse results of analysis directly in app ...
 <br/>
 
 ![SDR Astronomy Software](sdr7.jpg)
 
-And view final distribution map. (Here only showing foo data)
+And view final distribution map. (Here only showing foo data) This will be the final output of stage III. (I.e. hydrogen distribution map)
 
 ---
 
