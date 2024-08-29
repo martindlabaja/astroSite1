@@ -1,0 +1,43 @@
+---
+layout: ../../../layouts/MarkdownPostLayout.astro
+title: Custom Radioastronomy Software
+pubDate: 2023-06-01
+description: Adventures into SDR-RTL 
+author: Martin D.C.
+image:
+  url: https://docs.astro.build/assets/full-logo-light.png
+  alt: The full Astro logo.
+tags:
+  - genetics
+  - biology
+---
+import {Image} from 'astro:assets';
+
+<br />
+
+A quick software tool using matplotlib with Python to procedurally design optimal horn antennas for specific frequency, gain, and impedance parameters.
+<br/>
+
+Original calculations were done at: https://3g-aerial.biz/en/online-calculations/antenna-calculations/horn-antenna-online-calculator
+
+I have added visualization of parts and a GUI to it.
+<br/>
+
+Here you can see the parameters and resulting TOP and SIDE views with the measurements of our ideal final antenna.
+
+![Radioastronomy Horn Antenna](horn1.png)
+
+<br/>
+Here is also the detail of the SIDE view of the waveguide with probe height and location.
+
+![Radioastronomy Horn Antenna](horn2.png)
+<br/>
+Code: https://github.com/martindlabaja/horn_antenna_calculator
+
+
+---
+
+I of course plan to simulate it in Ansys HFSS, but that will come later. For now, I will just make one and test it in the field.
+
+---
+
