@@ -1,0 +1,118 @@
+---
+import WrapperLayout from '../layouts/WrapperLayout.astro';
+import { Image } from 'astro:assets';
+import myImage from "../assets/myc2SQ.jpg"; 
+const pageTitle = "- Professional Portfolio";
+
+// Import all client logos
+import adidas from '../assets/logos/ADIDAS.png';
+import amcon from '../assets/logos/AMCON.png';
+import arada from '../assets/logos/ARADA.png';
+import atrea from '../assets/logos/ATREA.png';
+import ave from '../assets/logos/AVE.png';
+import cushman from '../assets/logos/Cushman _ Wakefield.png';
+import fknv from '../assets/logos/FKNV.png';
+import geosan from '../assets/logos/GEOSAN.png';
+import karlovaUniverzita from '../assets/logos/Karlova univerzita.png';
+import logo22 from '../assets/logos/logo_22.png';
+import logo23 from '../assets/logos/logo_23.png';
+import logo24 from '../assets/logos/logo_24.png';
+import mendelovaUniverzita from '../assets/logos/Mendelova univarzita.png';
+import msmt from '../assets/logos/MŠMT.png';
+import rdRymarov from '../assets/logos/RD Rýmařov.png';
+import sekyraGroup from '../assets/logos/Sekyra Group.png';
+import skanska from '../assets/logos/SKANSKA.png';
+import specialized from '../assets/logos/Specialized.png';
+import trigema from '../assets/logos/Trigema.png';
+import vrburns from '../assets/logos/VRBURNS.png';
+import workday from '../assets/logos/Workday.png';
+import yit from '../assets/logos/YIT.png';
+import ceskaPostha from '../assets/logos/Česká pošta.png';
+import cvut from '../assets/logos/ČVUT.png';
+
+// Create an array of all logos for easy mapping
+const clientLogos = [
+  { src: adidas, alt: "Adidas" },
+  { src: amcon, alt: "Amcon" },
+  { src: arada, alt: "Arada" },
+  { src: atrea, alt: "Atrea" },
+  { src: ave, alt: "AVE" },
+  { src: cushman, alt: "Cushman & Wakefield" },
+  { src: fknv, alt: "FKNV" },
+  { src: geosan, alt: "Geosan" },
+  { src: karlovaUniverzita, alt: "Karlova Univerzita" },
+  { src: logo22, alt: "Client" },
+  { src: logo23, alt: "Client" },
+  { src: logo24, alt: "Client" },
+  { src: mendelovaUniverzita, alt: "Mendelova Univerzita" },
+  { src: msmt, alt: "MŠMT" },
+  { src: rdRymarov, alt: "RD Rýmařov" },
+  { src: sekyraGroup, alt: "Sekyra Group" },
+  { src: skanska, alt: "Skanska" },
+  { src: specialized, alt: "Specialized" },
+  { src: trigema, alt: "Trigema" },
+  { src: vrburns, alt: "VR Burns" },
+  { src: workday, alt: "Workday" },
+  { src: yit, alt: "YIT" },
+  { src: ceskaPostha, alt: "Česká Pošta" },
+  { src: cvut, alt: "ČVUT" }
+];
+---
+
+<WrapperLayout pageTitle={pageTitle}>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="item p-5 sm:p-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-6 md:mb-0">
+                    <Image
+                        src={myImage}
+                        widths={[240, 540, 720, myImage.width]}
+                        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${myImage.width}px`}
+                        alt="Professional portrait"
+                        class="rounded-full"
+                    />
+                </div>
+                <div class="md:w-2/3 md:pl-10">
+                    <h1 class="text-3xl font-bold text-white mb-4">Martin D.C.</h1>
+                    <p class="mb-4">Software Engineer & Creative Developer with expertise in 3D visualizations, educational tools, and mechatronics. Blending technology with art to create immersive experiences.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[#3fb0ac] hover:text-[#abd4d3]">mail</a>
+                        <a href="#" class="text-[#3fb0ac] hover:text-[#abd4d3]">linkedin</a>
+                        <a href="#" class="text-[#3fb0ac] hover:text-[#abd4d3]">code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Client Logos Section integrated directly below profile -->
+            <h2 class="text-2xl font-bold text-white mt-10 mb-4">Clients & Collaborations</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+                {clientLogos.map((logo) => (
+                    <div class="flex items-center justify-center p-2 bg-[#051015] rounded-lg">
+                        <Image 
+                            src={logo.src} 
+                            alt={logo.alt} 
+                            class="max-h-10 w-auto object-contain" 
+                            width={100}
+                            height={50}
+                        />
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+</WrapperLayout>
+
+<style>
+    .item {
+        flex: 30%; 
+        min-width: 350px;          
+        margin: 5px;
+        border-radius: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        background-color: #3fb0ac0e;
+        backdrop-filter: blur(5px);
+    }
+</style>

@@ -1,0 +1,96 @@
+---
+layout: ../../../layouts/MarkdownPostLayout.astro
+title: Custom Radioastronomy Software
+pubDate: 2023-06-01
+description: Adventures into SDR-RTL 
+author: Martin D.C.
+image:
+  url: https://docs.astro.build/assets/full-logo-light.png
+  alt: The full Astro logo.
+tags:
+  - genetics
+  - biology
+---
+import {Image} from 'astro:assets';
+
+<br />
+
+**Plan: Map the distribution of hydrogen** in the universe using the hydrogen line in the radio spectrum (1.42 MHz).
+<br/>
+
+The first part involved deciding on the data collection pipeline. While waiting for the hardware amplifiers to arrive, I started working on the software.
+<br/>
+
+For Windows PC, there is SDR# and GNU Radio. However, neither offered simple time-synchronized, interval-based recording options for long-term sky surveys, so I decided to create my own solution in the spirit of learning.
+<br/>
+
+I've settled on Python for the backend and JavaScript with Vue for the frontend as the GUI. The PySDR library, which is written in C, handles raw data recording (dealing with millions of samples per second).
+The Python backend manages the scheduled recording of raw IQ data and subsequent analysis.
+<br/>
+
+# Phase One: Automated Recording and Bridge Between SDR and GUI
+
+![SDR Astronomy Software](rda1.jpg)
+
+
+<br/>
+
+The next step will involve adding functionality specific to recording H-line signals, such as integration over time and finer control in filename naming with the azimuthal coordinate system saved along with the file itself.
+<br/>
+
+
+
+---
+
+# Phase II 
+
+After some more work on features, I realized I needed much more complex GUI so I moved to PyQT and abandoned the server idea.
+<br/>
+Here you can see how PyQT method turned out:
+<br/>
+
+![SDR Astronomy Software](sdr1.jpg)
+
+Analysis of signal: settings for: bandpass, average, recording, peak detection, noise floor measurement, relative power measurement, csv processed data export and recording in one tab.
+
+<br/>
+
+![SDR Astronomy Software](sdr2.jpg)
+
+Live preview featurue with IF Average (interpolation over time to increase STN ratio to spot weak signals)
+
+<br/>
+
+
+![SDR Astronomy Software](sdr3.jpg)
+
+Graphing features to browse recorder data: waterfall, spectral density, average, phase
+
+<br/>
+
+![SDR Astronomy Software](sdr5.jpg)
+![SDR Astronomy Software](sdr4.jpg)
+I can also select multiple recorder chunks and run quick analysis on them too, using waterfall graph to look for long time drifts ....
+<br/>
+
+
+
+
+
+
+![SDR Astronomy Software](sdr6.jpg)
+
+Or browse results of analysis directly in app ...
+<br/>
+
+![SDR Astronomy Software](sdr7.jpg)
+
+And view final distribution map. (Here only showing foo data) This will be the final output of stage III. (I.e. hydrogen distribution map)
+
+---
+
+And with this, I am ready to build the antenna. Stay tuned for more.
+
+---
+
+
