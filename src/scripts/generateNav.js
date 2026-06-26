@@ -75,6 +75,30 @@ for (const category in customLinks) {
     Object.assign(accordionMenu[category], customLinks[category]);
 }
 
+// Explicit ordering for menu sections. The key is a folder name; the value is
+// an array of entry names (files without extension, or subfolders) in the
+// desired order. Entries not listed here fall to the end, alphabetically.
+// Use '__root__' to order the top-level categories themselves.
+const customOrder = {
+    'about-me': ['tldr-portfolio', 'skills', 'goals-&-projets', 'philosophy'],
+};
+
+// Returns the keys of `menu` sorted per customOrder[folderName]; listed names
+// come first in the given order, the rest follow alphabetically.
+function orderedKeys(menu, folderName) {
+    const keys = Object.keys(menu);
+    const order = customOrder[folderName];
+    if (!order) return keys.sort((a, b) => a.localeCompare(b));
+    return keys.sort((a, b) => {
+        const ia = order.indexOf(a);
+        const ib = order.indexOf(b);
+        if (ia === -1 && ib === -1) return a.localeCompare(b);
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
+        return ia - ib;
+    });
+}
+
 console.log(JSON.stringify(accordionMenu, null, 2));
 
 
@@ -83,8 +107,10 @@ console.log(JSON.stringify(accordionMenu, null, 2));
 // `open` controls whether the <details> accordions are expanded by default.
 function generateAccordionHTML(menu, open, parentPath = '') {
     let html = '<div class="accordion" transition:persist>';
-    // Iterate over the keys (folders) in the menu
-    for (const folder in menu) {
+    // The folder whose children we're rendering ('__root__' at the top level).
+    const currentFolder = parentPath ? path.basename(parentPath) : '__root__';
+    // Iterate over the keys (folders) in the menu, honouring any custom order
+    for (const folder of orderedKeys(menu, currentFolder)) {
         if (Object.prototype.hasOwnProperty.call(menu, folder)) { // Use Object.prototype.hasOwnProperty to check
             const fullPath = path.join(parentPath, folder);
             if (menu[folder] instanceof Object) {
