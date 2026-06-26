@@ -36,7 +36,7 @@ The **thermal cycler** (also known as a **thermocycler**, **PCR machine** o
 <div class="imgWrap" data-lightbox="true"><Image src={thermo2} alt='thermoFinal' /></div>
 </div>
 
-<em>Four standart PCR vials in a heating chamber. Heating & cooling controlled by two TEC Peltier Elements with separate PID loop with custom software.</em>
+<em>Four standard PCR vials in a heating chamber. Heating & cooling controlled by two TEC Peltier elements with a separate PID loop and custom software.</em>
 ![PCR Reaction](thermoFinal3.jpg)
 <em>Custom controlling software with logging and history.</em>
 
@@ -44,21 +44,21 @@ The **thermal cycler** (also known as a **thermocycler**, **PCR machine** o
 
 # Intro
 <br/>
-One of the most common process in genetics is a PCR, which is shorthand for [polymerase chain reaction](https://www.bosterbio.com/protocol-and-troubleshooting/pcr-principle).
+One of the most common processes in genetics is PCR, which is shorthand for [polymerase chain reaction](https://www.bosterbio.com/protocol-and-troubleshooting/pcr-principle).
 
-It is a set of chemical reactions that is giving us possibility to selectively **duplicate** a specific **part of DNA** that we extract from a tissue (cell) sample.
+It is a set of chemical reactions that gives us the possibility to selectively **duplicate** a specific **part of DNA** that we extract from a tissue (cell) sample.
 
 <div class="imgWrap" data-lightbox="true">![PCR Reaction](pcr1.png)</div>
 
 For it to work, it needs a device that controls temperature **[C°]** in time. **[t]**
 <br/>
-What we want from machine is to heat the sample as follows:
+What we want from the machine is to heat the sample as follows:
 
 1.  **94 C°** for **30s** (Denaturation)
 2.  **56 C°**  for  **30s** (Annealing)
 3.  **72 C°** for **40s** (Extension)
  <br/>  
-   **ΔC°/s** otherwise called ramp-up & ramp-down time also plays a role. So we will need both heating and cooling.
+   **ΔC°/s**, otherwise called ramp-up & ramp-down time, also plays a role. So we will need both heating and cooling.
 <br/>
 Commercially available units are usually pretty expensive and look like this:
 
@@ -95,13 +95,13 @@ First I constructed a diagram of whole device:
 
 <div class="imgWrap" data-lightbox="true">![PCR Machine Diagram](thermo0.png)</div>
 
-Device has **two identical sections** that consist of the controller itself (Arduino in this case) that is connected to **H-Bridge** driver that **forwards  power** to the TEC Peltier elements.  H-Bridge can **reverse polarity** direction so Peltier can heat and cool the sample block when needed.
+The device has **two identical sections** that consist of the controller itself (Arduino in this case) connected to an **H-Bridge** driver that **forwards power** to the TEC Peltier elements. The H-Bridge can **reverse polarity** direction so the Peltier can heat and cool the sample block when needed.
 
-Why two identical sections you ask? Well because if we heated the mini vials inserted into the device only from the bottom, there would be lots of condensation due to the temperature gradient inside the vials and from what I have read could interfere with undergoing PCR reaction. Most **commercial designs are using heated top lid** for this reason, usually heated with resistance wire. (as lid does not have so much mass to be heated up) 
+Why two identical sections, you ask? Well, because if we heated the mini vials inserted into the device only from the bottom, there would be lots of condensation due to the temperature gradient inside the vials, which from what I have read could interfere with the ongoing PCR reaction. Most **commercial designs use a heated top lid** for this reason, usually heated with resistance wire. (as the lid does not have so much mass to be heated up) 
 <br/>
-I will use TEC Peltier element for both sample block and a lid. Because I dont like the idea of the top lid slacking behind the temperature curve of a sample block.
+I will use a TEC Peltier element for both the sample block and the lid, because I don't like the idea of the top lid lagging behind the temperature curve of the sample block.
 
-Let' put it to test on  a breaboard version of a project. Before I make  a proper sample block, I used a small chamber with water just to see how Peltier works to make some measurements beforehand.
+Let's put it to the test on a breadboard version of the project. Before I made a proper sample block, I used a small chamber with water just to see how the Peltier works and to make some measurements beforehand.
 <br/>
 ![thermocycler 01](thermo5.jpg)
 ![thermocycler 01](thermo6.jpg)
@@ -109,14 +109,14 @@ Let' put it to test on  a breaboard version of a project. Before I make  a prope
 
 ---
 
-# chamber & lid asembly
+# chamber & lid assembly
 <br/>
 Finally, we can move on to mechanical construction and assemble everything together. From the last prototype test, I found out that I needed more power and a bigger cooler! The whole construction was then assembled around those coolers in a tower-like system, making it stable and sturdy.
 <br/>
 Some clamps and parts were 3D printed from ABS, which can withstand around 100 C without deforming. Initially, I was hesitant to use ABS as clamps and crimps, but after testing it beyond its temperature limit towards 200 C, I saw there was no reason not to use it. In PCR reactions, there is never a need to go above the boiling point of a sample anyway.
 <br/>
 
-In Fusion360 I had prepared the chamber program for my CNC, this was the hardest part because it was my first time machining metal and it did not went smoothly at all. (you can see that chambers are eliptical, because my X axis got loose)
+In Fusion360 I had prepared the chamber program for my CNC. This was the hardest part because it was my first time machining metal, and it did not go smoothly at all. (you can see that the chambers are elliptical, because my X axis got loose)
 <br/>
 ![thermocycler 01](thermo8.jpg)
 ![thermocycler 01](thermo9.jpg)
@@ -128,10 +128,10 @@ In Fusion360 I had prepared the chamber program for my CNC, this was the hardest
 <br/>
 Our thermocycler would be useless without reliable control of parameters. One option would be to re-upload the code to Arduino with different parameters every time. I considered this to make my life easier, but then after playing around with controlling Arduino via USB serial PORT, I decided to make my own software to feel better about this project. Proper design needs proper control!
 <br/>
-What parameters at min. we need to control each reaction?
+What parameters, at minimum, do we need to control for each reaction?
 <br/>
 
-- [ ] initial denaturation temperate + duration
+- [ ] initial denaturation temperature + duration
 - [ ] denaturation temp. + duration
 - [ ] annealing temp. + duration
 - [ ] extension temp. + duration
@@ -140,7 +140,7 @@ What parameters at min. we need to control each reaction?
 
 <br/>
 
-Making software for controlling thermocycler was straightforward using UE4. I did not need any C++ for this and could use UnrealEngine’s native Blueprint visual scripting language.
+Making software for controlling the thermocycler was straightforward using UE4. I did not need any C++ for this and could use UnrealEngine’s native Blueprint visual scripting language.
 <br/>
 The software consists basically only of:
 <br/>
@@ -151,7 +151,7 @@ button to start / stop / connect
 <br/>
 ![PCR Reaction](thermoFinal3.jpg)
 <br/>
-the two lines you can see are temperature of the chamber vs the lid
+the two lines you can see are the temperature of the chamber vs the lid
 
 ---
 
